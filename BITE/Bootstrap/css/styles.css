@@ -150,7 +150,7 @@
       position: absolute;
       height: 100%;
       width: 100%;
-      z-index: 99;
+      z-index: 8;
       bottom: 0;
     }
     .article-header {
@@ -399,6 +399,12 @@
       overflow: hidden; 
       max-height: 420px;
     }
-    .section .col-md-8, .col-md-3, .col-md-4 {
+    .section .col-md-8 {
+      padding: 0px;
+    }
+    .section .col-md-3 {
+      padding: 0px;
+    }    
+    .section .col-md-4 {
       padding: 0px;
     }
