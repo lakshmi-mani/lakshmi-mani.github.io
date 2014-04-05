@@ -94,6 +94,7 @@
       font-size: 50px;
       text-align: center;
       font-family: 'Playfair Display', serif;
+      padding-bottom: 30px;
     }
     a {
       color: inherit;
@@ -112,8 +113,9 @@
     }
     .footer .container {
       padding-top: 30px;
-      background-color: #FFF;
+      background-color: #000;
       color: #999;
+      width: 100%;
     }
     .entry img {
       max-width: 100%;
@@ -354,6 +356,7 @@
   }
   a.selected {
     color: #c8a555;
+    border-bottom: 1px solid #c8a555;
   }
       .issue img {
       width: 100%;
@@ -363,6 +366,7 @@
     }
     #main {
       margin-top: 75px;
+      margin-bottom: 45px;
     }
     .jumbotron h1 {
       text-align: center;
@@ -500,3 +504,55 @@
     /*.indiv-article h4 {
       font-family: 'Oswald', sans-serif;
       } */
+    .trending img {
+      width: 100%;
+      display: block;
+      height: auto !important;
+      min-height:150px;
+      min-width: 100%;
+      -ms-interpolation-mode: bicubic; 
+      max-height: 150px;
+    }
+    .trending {
+      overflow: hidden; 
+      height: 100%;
+    }
+
+
+    .trending-section {
+      height: 100%;
+    }
+    .trending-section .title {
+      text-align: center;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: 200;
+      color: #000;
+      letter-spacing: 1px;
+      font-size: 20px;
+      word-wrap: break-word;
+      font-weight: 700;
+      padding-top: 5px;
+      padding-bottom: 25px;
+    }
+    .trending-section .category-title {
+      padding: 0px 7px;
+      color: #fff;
+      font-size: 45px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      display: block;
+      text-align: center;
+      position: absolute;
+      top: 40%;
+      margin: 0 auto;
+      margin-top: 15px;
+      width: 100%;
+      font-family: 'Oswald', Arial, Helvetica, sans-serif;
+      text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+      font-weight: 400;
+      /*border: 1px solid #fff;*/
+      word-wrap:break-word
+    }
+    .trending .col-xs-12 {
+      padding: 0px;
+    }
