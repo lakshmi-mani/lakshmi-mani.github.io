@@ -7,135 +7,22 @@
     <meta name="author" content="">
 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,800,900|Asap:400,700|Raleway:300,400,700|Amaranth:400,700|Lemon|Bevan' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400|Gilda+Display|Armata|Rosario|Buda:300|Telex' rel='stylesheet' type='text/css'>
 
   
-    <title>Bit Mag mockup</title>
+    <title>Article</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
 
     <style type="text/css">
     
-    .colheight-sm-1 {
-      height: 155px;
-    }
 
-    .btn-success {
-      background-color: #555;
-      border-color: #555;
-    }
-    .btn-success:hover {
-      background-color: #444;
-      border-color: #444;
-     }
-
-    .navbar-collapse {
-      color:#999;
-    }
-      a:hover {
-        /*text-decoration: none;*/
-        color: inherit;
-      }
-
-    #nav-menu {
-      margin-top: 9px;
-    }
-
-    #nav-menu a {
-      margin-right: 45px;
-    }
-
-    @media screen and (max-width: 768px) {
-      #nav-menu a {
-        display:block;
-        margin:10px;
-      }
-
-      #nav-menu button {
-        margin:10px;
-      }
-    }
-    .navbar-header .navbar-brand {
-      color:white;
-      font-size: 33px;
-      font-variant: small-caps;
-      letter-spacing: 3px;
-    }
-
-    .navbar {
-      margin-bottom: 0px;
-      border-radius: 0;
-    }
-
-    body {
-      font-family: 'Roboto Slab', sans-serif;
-      background-color: black;
-    }
-
-    @media (max-width: 991px) {
-      article {
-        margin-top:-20px;
-      }
-    }
-
-    @media (min-width: 992px) {
-      a:hover {
-        /*text-decoration: none;*/
-        color: inherit;
-      }
-
-      .biggest h3{
-        font-size: 36px;
-      }
-    }
-
-
-
-    @media (min-width: 992px) {
-      .colheight-sm-1 {
-        height: 175px;
-      }
-      .colheight-md-2{
-        height: 350px;
-      }
-      .entry img {
-      }
-    }
-    h3.article-title {
-      color: #FFF;
-      padding: 8px 20px;
-    }
-    a {
-      color: inherit;
-    }
-    .article-photographer {
-      color: #999;
-      padding: 1px 20px;      
-    }
-    .article-others {
-      color: #999;
-      padding: 1px 20px;  
-      font-size: 12px;    
-    }
-    .footer .container {
-      padding-top: 30px;
-      background-color: #000;
-      color: #999;
-    }
-    .entry img {
-      width: 100%;
-    }
-    .row .image {
-      margin: 5px 0px; 
-    }
-    .col-md-6 {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-    .col-md-12 {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
      </style>
 
   </head>
@@ -155,7 +42,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://bite-zine.com/">Bite</a>
+          <a class="navbar-brand" href="http://bite-zine.com/"><img src="logo.png" /></a>
         </div>
         <div class="navbar-collapse collapse navbar-right" id = "nav-menu">
           <!-- <form class="navbar-form navbar-right" role="form"> -->
@@ -164,9 +51,6 @@
             <a href="#">Submissions</a>
             <a href="#">Purchase</a>
 
-            <!-- <button type="submit" class="btn btn-success">Sign in</button> -->
-            <button type="submit" class="btn btn-success">Sign in</button>
-          <!-- </form> -->
         </div><!--/.navbar-collapse -->
       </div>
     </div>
@@ -179,7 +63,7 @@
 
 
 
-
+<div class="indiv-article">
 
 
     <div id="main" class="container">
@@ -187,50 +71,50 @@
 
         <div class="row">
             <header class="article-header">
-              <h3 class="article-title"><a href="single.html">Oh months fate forseen</a> </h3>
-              <div>
-                <span class="article-photographer"><a href="blog.html">Photographs by Conan Thai</a></span>
-
-                <span class="article-others"><a href="blog.html">Styling by Adrian Manuel</a></span>
-                <span class="article-others"><a href="blog.html">Hair by Damian Monzillo</a></span>
-                <span class="article-others"><a href="blog.html">Makeup by Margina Dennis</a></span>
-                <span class="article-others"><a href="blog.html">Photography assistance by Kim Nunnely</a></span>
+              <h4 class="article-title">Oh months fate forseen</h3>
+              <div class="col-md-12">
+                <h5>Photographs by <strong>Conan Thai</strong>
+                &nbsp; &nbsp; Styling by <strong>Adrian Manuel</strong>
+                &nbsp; &nbsp; Hair by <strong>Damian Monzillo</strong>
+                &nbsp; &nbsp; Makeup by <strong>Margina Dennis</strong>
+                &nbsp; &nbsp; Photography assistance by <strong>Kim Nunnely</strong></h5>
               </div>
         </div>
 
         <div class="row image">
-          <article class="entry image col-md-6">
+          <div class="image col-md-6">
             <img src="1.jpg" />
-          </article>
+          </div>
 
-          <article class="entry image col-md-6">
+          <div class="image col-md-6">
             <img src="2.jpg" />
-          </article>          
+          </div>          
 
-          <article class="entry image col-md-6">
+          <div class="image col-md-6">
             <img src="3.jpg" />
-          </article>
+          </div>
 
-          <article class="entry image col-md-6">
+          <div class="image col-md-6">
             <img src="4.jpg" />
-          </article>          
+          </div>          
 
-          <article class="entry image col-md-6">
+          <div class="image col-md-6">
             <img src="5.jpg" />
-          </article>
+          </div>
 
-          <article class="entry image col-md-6">
+          <div class="image col-md-6">
             <img src="6.jpg" />
-          </article>          
+          </div>          
 
-          <article class="entry image col-md-6">
+          <div class="image col-md-6">
             <img src="7.jpg" />
-          </article>
+          </div>
 
-          <article class="entry image col-md-6">
+          <div class="image col-md-6">
             <img src="8.jpg" />
-          </article>          
+          </div>          
         </div>
+</div>
 
       <div class="footer">
     <div class="container">
