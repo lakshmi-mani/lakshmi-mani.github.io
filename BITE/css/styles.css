@@ -117,14 +117,8 @@
       width: 80%;
     }
     .entry img {
-      max-width: 100%;
-      display: block;
-      height: auto !important;
-      width: auto\9; /* ie8+9 */
-      /* lt ie8 */
-      -ms-interpolation-mode: bicubic; 
+      width: 100%;
       min-height: 100%;
-      min-width: 100%;
     }
     .entry {
       overflow: hidden; 
@@ -516,12 +510,7 @@
       } */
     .trending img {
       width: 100%;
-      display: block;
-      height: auto !important;
-      min-height:150px;
-      min-width: 100%;
-      -ms-interpolation-mode: bicubic; 
-      max-height: 150px;
+      min-height: 100%;
     }
     .trending {
       overflow: hidden; 
@@ -604,4 +593,6 @@
     }
     .trending-image {
       overflow: hidden;
+      height: 150px;
+
     }
