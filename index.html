@@ -82,6 +82,11 @@
       padding-top: 30px;
       padding-bottom: 30px;      
     }
+    .odd.contact {
+      padding-bottom: 0px;
+      margin-bottom: -19px;
+      z-index: 99;
+    }
     .jumbotron h1,
     .jumbotron .h1 {
       color: #FFF;
@@ -313,6 +318,8 @@
       height: 100%;
       padding: 25px 0px;
       background-size: cover;
+      min-height: 500px;
+      z-index: -80;
     }
     .col-md-4 img {
       width: 80px;
@@ -332,6 +339,12 @@
       color: #dedede;  
       font-size: 13px; 
       text-align: left;
+    }
+    .row.contact {
+      margin-top: -20px;
+    }
+    .row.contact img {
+      width: 300px
     }
 
   /* social icons */
@@ -516,9 +529,20 @@
   </div>
 
 <a name="contact"></a>
+
+
+  <div class="odd contact">
+    <div class="container">
+      <div class="row contact">
+        <div class="col-lg-4 col-lg-offset-4 col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+          <img src="Profile-contact.png" width="100"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <div class="navbar navbar-default" role="navigation">
-            <div class="container">
-  
+            <div class="container">  
         
         <div class="row">
 
