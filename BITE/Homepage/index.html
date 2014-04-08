@@ -19,30 +19,31 @@
     <title>Homepage</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/styles.css" rel="stylesheet">
-
-   <script>
-With jQuery
-
-**$(window).resize(function() {
-
-$(‘.jumbotron’).css(‘height’, window.innerHeight+’px’);
-
-});**
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="../slick/slick.css" rel="stylesheet" type="text/css">
 
 
+<script>
+ $(document).ready(function(){
+  $('.test').slick({
+    autoplay: false, // Enables auto play of slides
+accessibility: true, // Enables tabbing and arrow key navigation
+cssEase: 'ease', // CSS3 easing
+easing: 'linear', // animate() fallback easing
+
+  });
 
 
+});
+</script>
 
-   </script>
 
   </head>
 
 
 
   <body>
-
 
 
     <div class="navbar navbar-inverse navbar-static" role="navigation">
@@ -75,10 +76,10 @@ $(‘.jumbotron’).css(‘height’, window.innerHeight+’px’);
 
 <div class="jumbotron">
           <div class="wrapper">
-            <h1> Issue 8 </h1>
+            <h1> ISSUE 8 </h1>
             <p> Read Issue </p>
           </div>
-        </div>
+      </div>
 
 
 
@@ -86,12 +87,12 @@ $(‘.jumbotron’).css(‘height’, window.innerHeight+’px’);
     <div id="main" class="container">
         <div class="row">
             <header class="article-header">
-              <h4 class="article-title">Latest Posts</h3>
+              <h4 class="article-title">Latest Posts</h4>
         </div>
         <div class="row image">
           <article class="entry image col-md-6 col-sm-12">
             <img src="8.jpg" />
-              <div class="feat-overlay"></div>
+            <div class="feat-overlay"></div>            
               <div class="category-name">Paris fashion week </div>
               <div class="category-title"> Street Style </div>
           </article>
@@ -126,7 +127,7 @@ $(‘.jumbotron’).css(‘height’, window.innerHeight+’px’);
       <div class="trending-section">
        <div class="row">
         <header class="article-header">
-          <h4 class="article-title">Trending</h3>
+          <h4 class="article-title">Trending</h4>
         </div>   
 
       <div class="row">
@@ -242,8 +243,11 @@ $(‘.jumbotron’).css(‘height’, window.innerHeight+’px’);
     </div>
   </div>
 
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <!--<script src="../js/jquery.min.js"></script> -->
+<script src="../js/bootstrap.min.js"></script>    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="../slick/slick.js"></script>
+
   
 
 </body>
