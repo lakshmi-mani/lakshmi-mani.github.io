@@ -81,7 +81,7 @@
         -moz-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.8) inset;
         -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.8) inset;
       position: absolute;
-      height: 81%;
+      height: 100%;
       width: 100%;
       z-index: 8;
       top: 0;
@@ -96,5 +96,28 @@
       z-index: 8;
       top: 0;
     }
+    .colheight-sm-1 img {
+    /* display: block; */
+    width: auto;
+    min-height: auto;
+    /* position: static; */
+    height: 300px;
+    min-width: 100%;
+    /* left: -50%; */
+    position: absolute;
+  }
+
+    .colheight-md-2 img {
+    /* display: block; */
+    width: auto;
+    min-height: auto;
+    /* position: static; */
+    height: 400px;
+    min-width: 100%;
+    /* left: -50%; */
+    position: absolute;
+  }
+
+
 
 
