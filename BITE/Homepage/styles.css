@@ -1,6 +1,3 @@
-    .row .image {
-      margin: 5px 0px; 
-    }
     .entry img {
       width: 100%;
       min-height: 100%;
@@ -149,10 +146,6 @@
     article img {
       display: block;
       width: 100%;
-    }
-    article {
-      overflow: hidden; 
-      max-height: 420px;
     }
 
     .title-wrap {
