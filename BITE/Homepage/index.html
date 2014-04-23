@@ -41,6 +41,27 @@ easing: 'linear', // animate() fallback easing
 });
 </script>
 
+<style>
+  #myCarousel h1 {
+    font-size: 36px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    z-index: 90;
+    color: #fff;
+    top: 40%;
+    /* left: 50%; */
+    width: 100%;
+  }
+
+  .carousel-control.right {
+    background-image: none;
+  }
+  .carousel-control.left {
+    background-image: none;
+  }
+</style>
+
 
   </head>
 
@@ -89,8 +110,37 @@ easing: 'linear', // animate() fallback easing
           <div class="wrapper">
             <h1> ISSUE 8 </h1>
             <p> Read Issue </p>
-          </div>
+          </div>      
       </div>
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <h1> lalala </h1>
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item">
+          <img src="http://static.tumblr.com/f5141e50fa56d863feebfde9b87d0fd8/fukdjbl/d6Rn1mx1h/tumblr_static_dsc_7482.jpg">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://static.tumblr.com/d464f8ac97f0fb95569150dca22921b4/fukdjbl/j9tn1mxag/tumblr_static__mg_0262.jpg">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item active">
+          <img src="http://static.tumblr.com/860d701b53fd221d26bf74bd818e689f/fukdjbl/Ol0n1mx3u/tumblr_static_bite-2527.jpg">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
 
     <!--<div id="main" class="container">
         <div class="slider single-item">
@@ -265,7 +315,7 @@ easing: 'linear', // animate() fallback easing
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="../js/slick.js"></script>
     <script type="text/javascript" src="../js/slick-scripts.js"></script>
-  
+      <script src="./Carousel Template for Bootstrap_files/docs.min.js"></script>
 
 </body>
 </html>
