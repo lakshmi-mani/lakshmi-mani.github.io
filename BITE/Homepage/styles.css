@@ -169,7 +169,7 @@ article img {
 .trending-section {
   height: 100%;
 }
-.trending-section .title {
+.trending .title {
   text-align: center;
   font-family: 'PT Sans', sans-serif;
   font-weight: 200;
@@ -181,9 +181,11 @@ article img {
   padding-top: 5px;
   margin-top: -34px;
   border: 1px solid #FFF;
-  box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.8) inset;
-  -moz-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.8) inset;
-  -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.4) inset;    
+  box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset;
+  width: 100%;  
+
 }
 .trending-section .category-title {
   padding: 0px 7px;
@@ -204,18 +206,12 @@ article img {
   /*border: 1px solid #fff;*/
   word-wrap:break-word
 }
-.trending .col-xs-12 {
+.trending {
   padding: 0px;
+  margin-bottom: 15px;
 }
 
-/*.trending .col-xs-12:hover {
-  -webkit-transform: scale(1.03,1.03);
-  -moz-transform: scale(1.03,1.03);
-  -o-transform: scale(1.03,1.03);
-  -ms-transform: scale(1.03,1.03);
- transform: scale(1.03,1.03);
-}*/
-.trending .col-xs-12 {
+.trending {
   -webkit-transition: opacity .3s ease-out;
   -moz-transition: opacity .3s ease-out;
   -o-transition: opacity .3s ease-out;
@@ -223,18 +219,54 @@ article img {
   transition: opacity .3s ease-out;
   opacity: 1;
 }
-.trending .col-xs-12:hover {
+.trending:hover {
 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 filter: alpha(opacity=100);
 opacity: 0.6;
 background-color: #000;
+}
 
+
+.trending-overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 95%;
+height: 100%;
+background: rgba(20,20,20,0.7);
+opacity: 0;
+-webkit-transition: opacity .2s ease-out;
+-moz-transition: opacity .2s ease-out;
+-o-transition: opacity .2s ease-out;
+transition: opacity .2s ease-out;
+line-height: 1;
+margin-left: 15px;
+}
+.trending-overlay:hover {
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+filter: alpha(opacity=100);
+opacity: 1;
 }
 
 .trending-image {
   overflow: hidden;
   height: 190px;
+  margin: 0 auto;
+  background-size: cover;
 }
+
+.trending-image img.wide {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+.trending-image img.tall {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}​
+
+
 #myCarousel h1 {
   margin: 0 auto;
   text-align: center;

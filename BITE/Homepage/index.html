@@ -31,6 +31,14 @@ $('#myCarousel').carousel({
   interval: 2000
 })
 </script>
+<script>
+$(window).load(function(){
+ $('.trending-image').find('img').each(function(){
+  var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
+  $(this).addClass(imgClass);
+ })
+})
+</script>
   </head>
 
 
@@ -148,81 +156,51 @@ $('#myCarousel').carousel({
 
       <div class="row">
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
           <div class="trending">
-            <div class="col-xs-12">
-              <div class="trending-image">
-              <img src="Trending1.png" />
+              <div class="trending-image" style="background: url('Trending1.png'); background-size:cover; background-repeat: no-repeat;"> 
               </div>
-            </div>
-            <div class="col-xs-12">
               <div class="title"> Boyish Charm </div>
-            </div>
           </div>
         </div>  
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
           <div class="trending">
-            <div class="col-xs-12">
-              <div class="trending-image">
-              <img src="Trending2.jpg" />
+              <div class="trending-image" style="background: url('Trending2.jpg'); background-size:cover; background-repeat: no-repeat;"> 
               </div>
-            </div>
-            <div class="col-xs-12">
               <div class="title"> Edo </div>
-            </div>
           </div>
         </div>  
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
           <div class="trending">
-            <div class="col-xs-12">
-              <div class="trending-image">
-              <img src="Trending3.jpg" />
+              <div class="trending-image" style="background: url('Trending3.jpg'); background-size:cover; background-repeat: no-repeat;"> 
               </div>
-            </div>
-            <div class="col-xs-12">
               <div class="title"> Emma </div>
-            </div>
           </div>
         </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
           <div class="trending">
-            <div class="col-xs-12">
-              <div class="trending-image">
-              <img src="Trending4.jpg" />
+              <div class="trending-image" style="background: url('Trending4.jpg'); background-size:cover; background-repeat: no-repeat;"> 
               </div>
-            </div>
-            <div class="col-xs-12">
               <div class="title"> Kyran </div>
-            </div>
           </div>
         </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
           <div class="trending">
-            <div class="col-xs-12">
-              <div class="trending-image">
-              <img src="Trending5.jpg" />
+              <div class="trending-image" style="background: url('Trending5.jpg'); background-size:cover; background-repeat: no-repeat;"> 
               </div>
-            </div>
-            <div class="col-xs-12">
               <div class="title"> Street Style </div>
-            </div>
           </div>
         </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
           <div class="trending">
-            <div class="col-xs-12">
-              <div class="trending-image">
-              <img src="Trending6.jpg" />
+              <div class="trending-image" style="background: url('Trending6.jpg'); background-size:cover; background-repeat: no-repeat;"> 
               </div>
-            </div>
-            <div class="col-xs-12">
               <div class="title"> Street Style</div>
-            </div>
           </div>
         </div>
 
@@ -265,9 +243,7 @@ $('#myCarousel').carousel({
 <script src="../js/docs.min.js"></script>    
 
 
-    <!--<script src="./Carousel Template for Bootstrap_files/jquery.min.js"></script>
-    <script src="./Carousel Template for Bootstrap_files/bootstrap.min.js"></script>
-    <script src="./Carousel Template for Bootstrap_files/docs.min.js"></script>-->
+
 
 </body>
 </html>
