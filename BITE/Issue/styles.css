@@ -95,7 +95,7 @@
   z-index: 1;
   top: 0;  
   z-index: 4;
-  background: rgba(20,20,20,0.7);
+  background: rgba(20,20,20,0.3);
   opacity: 0;
   -webkit-transition: opacity .2s ease-out;
   -moz-transition: opacity .2s ease-out;
@@ -127,7 +127,7 @@ opacity: 1;
   z-index: 1;
   top: 0;  
   z-index: 4;
-  background: rgba(20,20,20,0.7);
+  background: rgba(20,20,20,0.3);
   opacity: 0;
   -webkit-transition: opacity .2s ease-out;
   -moz-transition: opacity .2s ease-out;
@@ -162,6 +162,8 @@ min-width: 100%;
 /* left: -50%; */
 position: absolute;
 }
-
+.overlay {
+  height: 100%;
+}
 
 
