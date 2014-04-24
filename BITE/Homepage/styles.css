@@ -294,7 +294,16 @@ opacity: 1;
   text-shadow: 0 4px 4px rgba(0,0,0,0.5);
   padding: 10px;
   font-size: 72px; 
+  -webkit-transition: box-shadow .2s ease-out;
+-moz-transition: box-shadow .2s ease-out;
+-o-transition: box-shadow .2s ease-out;
+transition: box-shadow .2s ease-out;
 }
+#myCarousel h2:hover {
+  box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset; 
+  }
 #myCarousel p {
   text-align: center;
   font-family: 'Raleway', sans-serif;
