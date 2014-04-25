@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://getbootstrap.com/javascript/#modals -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+<title>
+  
+    JavaScript · Bootstrap
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="http://getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://getbootstrap.com/assets/ico/apple-touch-icon-144-precomposed.png">
+                               <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+
+<script async="" id="gauges-tracker" data-site-id="4f0dc9fef5a1f55508000013" src="./JavaScript · Bootstrap_files/track.js"></script><script id="twitter-wjs" async="" src="./JavaScript · Bootstrap_files/widgets.js"></script><script async="" src="./JavaScript · Bootstrap_files/azcarbon_2_1_0_HORIZ"></script><script async="" src="./JavaScript · Bootstrap_files/ga.js"></script><script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-146052-10']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  <style id="holderjs-style" type="text/css"></style><style>#adzerk_by {display:none}
+
+/* horiz */
+.carbonad {display:block; background: #fdfdfd; background-image: -moz-linear-gradient(top, #f8f8f8, #fdfdfd); background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f8f8f8),color-stop(1, #fdfdfd)); border: 1px solid #d5d5d5; font-family: Lucida Grande, Arial, Helvetica, sans-serif; font-size: 11px; height: 118px; line-height: 15px; overflow: hidden; width: 300px;}
+.carbonad-img {border: none; display: inline; float: left; height: 100px; margin: 9px; width: 130px;}
+.carbonad-text {display:inline; float:left; width:142px; padding-top:13px;}
+.carbonad-text a {color: #000000; font-weight: bold; text-decoration: none;}
+.carbonad-tag {float: left; margin-top: 9px; text-align: center; width: 142px; color: #999999;}
+.carbonad-tag a {color: #999999; text-decoration: none;}
+</style></head>
+  <body data-twttr-rendered="true" class="" style="">
+    <a class="sr-only" href="http://getbootstrap.com/javascript/#content">Skip to main content</a>
+
+    <!-- Docs master nav -->
+
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-9" role="main">
+
+
+
+<!-- Modal
+================================================== -->
+
+
+
+
+  <!-- sample modal content -->
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Text in a modal</h4>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+
+          <h4>Popover in a modal</h4>
+          <p>This <a href="http://getbootstrap.com/javascript/#" role="button" class="btn btn-default popover-test" title="" data-content="And here&#39;s some amazing content. It&#39;s very engaging. right?" data-original-title="A Title">button</a><div class="popover fade right in" style="display: block; top: 87px; left: 116px;"><div class="arrow"></div><h3 class="popover-title">A Title</h3><div class="popover-content">And here's some amazing content. It's very engaging. right?</div></div> should trigger a popover on click.</p>
+
+          <h4>Tooltips in a modal</h4>
+          <p><a href="http://getbootstrap.com/javascript/#" class="tooltip-test" title="" data-original-title="Tooltip">This link</a> and <a href="http://getbootstrap.com/javascript/#" class="tooltip-test" title="" data-original-title="Tooltip">that link</a> should have tooltips on hover.</p>
+
+          <hr>
+
+          <h4>Overflowing text to show scroll behavior</h4>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="bs-example" style="padding-bottom: 24px;">
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      Launch demo modal
+    </button>
+  </div><!-- /example -->
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./JavaScript · Bootstrap_files/jquery.min.js"></script>
+<script src="./JavaScript · Bootstrap_files/bootstrap.min.js"></script>
+<script src="./JavaScript · Bootstrap_files/docs.min.js"></script>
+
+
+
+<script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
+    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
+
+<!-- Analytics
+================================================== -->
+<script>
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+  
+
+</body></html>
