@@ -4,9 +4,14 @@
     -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.8) inset;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 98%;
   z-index: 8;
   bottom: 0;
+}
+@media (max-width: 992px) {
+  .title-wrap {
+    width: 99%;
+  }
 }
 .issue-number {
   position: absolute;
@@ -43,19 +48,40 @@
   /*border: 1px solid #fff;*/
 }
 .issue {
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+-webkit-transition: opacity .2s ease-out;
+-moz-transition: opacity .2s ease-out;
+-o-transition: opacity .2s ease-out;
+transition: opacity .2s ease-out;
+opacity: 1;
 }
 .issue:hover {
-  -webkit-transform: scale(1.02,1.02);
-  -moz-transform: scale(1.02,1.02);
-  -o-transform: scale(1.02,1.02);
-  -ms-transform: scale(1.02,1.02);
- transform: scale(1.02,1.02);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+filter: alpha(opacity=100);
+opacity: 0.7;
 }
+
+
+.entry .feat-overlay{
+position: absolute;
+top: 0;
+left: 0;
+width: 95%;
+height: 100%;
+background: rgba(20,20,20,0.7);
+opacity: 0;
+-webkit-transition: opacity .2s ease-out;
+-moz-transition: opacity .2s ease-out;
+-o-transition: opacity .2s ease-out;
+transition: opacity .2s ease-out;
+line-height: 1;
+margin-left: 15px;
+}
+.entry:hover .feat-overlay{
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+filter: alpha(opacity=100);
+opacity: 1;
+}
+
 .issue img {
   width: 100%;
 }
