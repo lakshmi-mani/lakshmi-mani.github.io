@@ -18,7 +18,37 @@
     font-family: 'socicon' !important;
     color: #e7e7e7;
     padding: 10px;
+    -webkit-transition-delay: 0s;
+-webkit-transition-duration: 0.2s;
+-webkit-transition-property: color;
+-webkit-transition-timing-function: linear;
 }
+.socicon:hover {
+color: #c8a555;
+text-decoration: none;
+}
+.socicon:hover.facebook {
+color: #49659f;
+text-decoration: none;
+}
+
+.socicon:hover.twitter {
+color: #23abe2;
+text-decoration: none;
+}
+.socicon:hover.rss {
+color: #f9a934;
+text-decoration: none;
+}
+.socicon:hover.instagram {
+color: #c6b7a3;
+text-decoration: none;
+}
+.socicon:hover.vimeo {
+color: #1bb6ec;
+text-decoration: none;
+}
+
 .nav-social {
   margin-top: 20px;
   z-index: 1001;
