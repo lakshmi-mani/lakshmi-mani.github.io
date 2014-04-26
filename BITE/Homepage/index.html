@@ -47,14 +47,21 @@ $('#myCarousel').carousel({
           </button>
           <a class="navbar-brand" href="../Homepage/index.html"><img src="logo.jpg" /></a>
         </div>
-        <div class="navbar-collapse collapse navbar-right" id = "nav-menu">
-          <!-- <form class="navbar-form navbar-right" role="form"> -->
 
+        <div class="navbar-right nav-social">
+            <a href="../Back Issues/index.html"><span class="socicon">a</span></a>
+            <a href="../Gen/About.html"><span class="socicon">b</span></a>
+            <a href="../Gen/Submissions.html"><span class="socicon">x</span></a>
+            <a href="../Gen/Purchases.html"><span class="socicon">s</span></a>
+            <a href="../Gen/Purchases.html"><span class="socicon">,</span></a>
+        </div>
+
+        <div class="navbar-collapse collapse nav-right" id = "nav-menu">
             <a href="../Back Issues/index.html">Back Issues</a>
             <a href="../Gen/About.html">About & FAQ</a>
             <a href="../Gen/Submissions.html">Submissions</a>
             <a href="../Gen/Purchases.html">Purchase</a>
-        </div><!--/.navbar-collapse -->
+        </div>
       </div>
     </div>
 
@@ -107,7 +114,7 @@ $('#myCarousel').carousel({
               <h4 class="article-title">Latest Posts</h4>
         </div>-->
         <div class="row image">
-          <a href="#">
+          <a data-toggle="modal" data-target="#post1" href="">
           <article class="entry image col-md-6 col-sm-12">
             <img src="8.jpg" />
             <div class="feat-overlay"></div>            
@@ -221,6 +228,41 @@ $('#myCarousel').carousel({
  </div>
 
 </div>
+
+  <!--  modal 1 -->
+  <div id="post1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title article-title" id="myModalLabel">Oh months fate forseen</h4>
+        </div>
+        <div class="modal-body">
+         <div class="row">
+              <div class="col-md-12">
+                <h5>Photographs by <strong>Conan Thai</strong>
+                &nbsp; &nbsp; Styling by <strong>Adrian Manuel</strong>
+                &nbsp; &nbsp; Hair by <strong>Damian Monzillo</strong>
+                &nbsp; &nbsp; Makeup by <strong>Margina Dennis</strong>
+                &nbsp; &nbsp; Photography assistance by <strong>Kim Nunnely</strong></h5>
+              </div>
+        </div>
+
+        <div class="row image">
+          <div class="image col-md-6 modal-article" style="background: url('5.jpg'); background-size:cover; background-repeat: no-repeat;">
+          </div>
+
+        </div>
+        </div>
+        <!--<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>-->
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
       <!--<div class="footer">
     <div class="container">
