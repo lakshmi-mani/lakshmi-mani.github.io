@@ -11,16 +11,6 @@
   font-weight: 300;  
 }
 
-.jumbotron {
-  background-size: cover;
-  min-height: 800px;
-  margin-top: 65px;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.jumbotron .container {
-  width: 100%;
-}
 .category-name {
   position: absolute;
   top: 20%;
@@ -328,13 +318,13 @@ transition: box-shadow .2s ease-out;
   background-image: none;
 }
 .carousel {
-height: 700px;
+height: 620px;
 margin-bottom: 60px;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 700px;
+  height: 620px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -342,5 +332,13 @@ margin-bottom: 60px;
   top: 0;
   left: 0;
   min-width: 100%;
-  min-height: 700px;
+  min-height: 620px;
+}
+#myCarousel {
+  margin-top: 65px;
+}
+@media screen and (max-width: 991px) {
+  #myCarousel {
+    margin-top: 82px;
+  }
 }
