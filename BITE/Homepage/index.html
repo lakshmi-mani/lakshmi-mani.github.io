@@ -28,14 +28,7 @@ $('#myCarousel').carousel({
   interval: 2000
 })
 </script>
-<script>
-$(window).load(function(){
- $('.trending-image').find('img').each(function(){
-  var imgClass = (this.width/this.height > 1) ? 'wide' : 'tall';
-  $(this).addClass(imgClass);
- })
-})
-</script>
+
   </head>
 
 
@@ -80,23 +73,20 @@ $(window).load(function(){
           <a href="../Issue/index.html"><h2> Issue 8 </h2></a>
           <a href="../Issue/index.html"><p>Read Issue</p></a>
       <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
       </ol>
       <div class="carousel-inner">
-        <div class="item">
-          <img src="http://static.tumblr.com/f5141e50fa56d863feebfde9b87d0fd8/fukdjbl/d6Rn1mx1h/tumblr_static_dsc_7482.jpg">
+        <div class="item" style="background: url('http://static.tumblr.com/f5141e50fa56d863feebfde9b87d0fd8/fukdjbl/d6Rn1mx1h/tumblr_static_dsc_7482.jpg'); background-size:cover; background-repeat: no-repeat; background-position: 50% 50%;">
           <div class="container">
           </div>
         </div>
-        <div class="item">
-          <img src="http://static.tumblr.com/d464f8ac97f0fb95569150dca22921b4/fukdjbl/j9tn1mxag/tumblr_static__mg_0262.jpg">
+        <div class="item" style="background: url('http://static.tumblr.com/d464f8ac97f0fb95569150dca22921b4/fukdjbl/j9tn1mxag/tumblr_static__mg_0262.jpg'); background-size:cover; background-repeat: no-repeat; background-position: 50% 50%;">
           <div class="container">
           </div>
         </div>
-        <div class="item active">
-          <img src="http://static.tumblr.com/860d701b53fd221d26bf74bd818e689f/fukdjbl/Ol0n1mx3u/tumblr_static_bite-2527.jpg">
+        <div class="item active" style="background: url('http://static.tumblr.com/860d701b53fd221d26bf74bd818e689f/fukdjbl/Ol0n1mx3u/tumblr_static_bite-2527.jpg'); background-size:cover; background-repeat: no-repeat; background-position: 50% 50%;">
           <div class="container">
           </div>
         </div>
@@ -108,9 +98,9 @@ $(window).load(function(){
 
 
     <div id="main" class="container">
-        <div class="row">
+        <!--<div class="row">
               <h4 class="article-title">Latest Posts</h4>
-        </div>
+        </div>-->
         <div class="row image">
           <a href="#">
           <article class="entry image col-md-6 col-sm-12">
@@ -254,40 +244,6 @@ $(window).load(function(){
     </div>
   </div>-->
 
-  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
-
-
-<div id="myModal" class="modal hide fade" style="display: none; ">
-  <div class="modal-header">
-    <button class="close" data-dismiss="modal">×</button>
-    <h3>Modal Heading</h3>
-  </div>
-  <div class="modal-body">
-    <h4>Text in a modal</h4>
-    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
-
-    <h4>Popover in a modal</h4>
-    <p>This <a href="#" class="btn popover-test" data-content="And here's some amazing content. It's very engaging. right?" data-original-title="A Title">button</a> should trigger a popover on hover.</p>
-
-    <h4>Tooltips in a modal</h4>
-    <p><a href="#" class="tooltip-test" data-original-title="Tooltip">This link</a> and <a href="#" class="tooltip-test" data-original-title="Tooltip">that link</a> should have tooltips on hover.</p>
-
-    <hr>
-
-    <h4>Overflowing text to show optional scrollbar</h4>
-    <p>We set a fixed <code>max-height</code> on the <code>.modal-body</code>. Watch it overflow with all this extra lorem ipsum text we've included.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn" data-dismiss="modal">Close</a>
-    <a href="#" class="btn btn-primary">Save changes</a>
-  </div>
-  </div>
     
 
         <div class="footer">

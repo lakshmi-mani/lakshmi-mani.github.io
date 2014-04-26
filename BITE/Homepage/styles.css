@@ -300,9 +300,10 @@ opacity: 1;
 transition: box-shadow .2s ease-out;
 }
 #myCarousel h2:hover {
-  box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset;
+  /*box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset;
     -moz-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset;
-    -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset; 
+    -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset; */
+    text-shadow: 0 5px 5px rgba(0,0,0,0.8);
   }
 #myCarousel p {
   text-align: center;
@@ -316,6 +317,9 @@ transition: box-shadow .2s ease-out;
   z-index: 100;
   top: 55%;
   width: 100%;
+}
+#myCarousel p:hover {
+  text-shadow: 0 4px 4px rgba(0,0,0,0.8);
 }
 .carousel-control.right {
   background-image: none;

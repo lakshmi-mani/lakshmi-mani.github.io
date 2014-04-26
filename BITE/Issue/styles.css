@@ -29,13 +29,13 @@
 }
 
 .section .col-md-8 {
-  padding: 0px;
+  padding: 3px;
 }
 .section .col-md-3 {
-  padding: 0px;
+  padding: 3px;
 }    
 .section .col-md-4 {
-  padding: 0px;
+  padding: 3px;
 }
 
 .issue-article-name {
@@ -190,5 +190,10 @@ position: absolute;
 .overlay {
   height: 100%;
 }
-
+.modal-lg {
+width: 90%;
+}
+.modal-article {
+  min-height: 700px;
+}
 
