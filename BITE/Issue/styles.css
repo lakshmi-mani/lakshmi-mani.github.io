@@ -2,10 +2,16 @@
 .colheight-sm-1 {
   height: 205px;
 }
+.colheight-sm-3 {
+  height: 600px;
+}
 
 @media (max-width: 991px) and (min-width: 481px) {
   .colheight-sm-1 {
-    height: 300px;
+    height: 200px;
+  }
+    .colheight-sm-3 {
+    height: 600px;
   }
 }
 @media (min-width: 992px) {
@@ -114,6 +120,13 @@
   top: 0;
   margin-top: 3px;
 
+}
+
+@media (max-width: 768px) {
+.issue-title-wrap-row2 {
+  height: 97%;
+  width: 99%;
+}
 }
 .issue-title-wrap-row2 .overlay {
   position: absolute;
