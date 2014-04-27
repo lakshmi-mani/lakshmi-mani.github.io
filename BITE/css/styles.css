@@ -136,18 +136,7 @@ body {
 a {
   color: inherit;
 }
-.article-photographer {
-  color: #999;
-  padding: 1px 20px;  
-  font-family: 'PT Sans', serif; 
-  font-weight: 900;  
-  text-transform: uppercase;    
-}
-.article-others {
-  color: #999;
-  padding: 1px 20px;  
-  font-size: 12px;    
-}
+
 .footer .container {
   padding-top: 30px;
   color: #999;

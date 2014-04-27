@@ -400,3 +400,10 @@ box-shadow: 0 -200px 100px -100px rgba(255, 255, 255, 0.5) inset;
 -moz-box-shadow: 0 -200px 100px -100px rgba(255, 255, 255, 0.5) inset;
 -webkit-box-shadow: 0 -200px 100px -100px rgba(255, 255, 255, 0.5) inset; 
 }
+
+.entry:hover .date {
+color: #FFF;
+box-shadow: none;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+}
