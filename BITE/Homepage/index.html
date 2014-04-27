@@ -110,36 +110,40 @@ $('#myCarousel').carousel({
             <div class="feat-overlay"></div>            
               <div class="category-name">Paris fashion week </div>
               <div class="category-title"> Street Style </div>
+              <div class="date"> April 18 </div>
           </article>
           </a>
 
-          <a href="#">
+          <a data-toggle="modal" data-target="#post2" href="">
           <article class="entry image col-md-6 col-sm-12">
             <img src="7.jpg" />
             <div class="feat-overlay"></div>
               <div class="category-name">Blog Exclusive </div>
               <div class="category-title"> KYRAN </div>
+              <div class="date"> April 17 </div>
           </article>  
           </a>        
              
         </div>
 
         <div class="row image">
-          <a href="#">
+          <a data-toggle="modal" data-target="#post3" href="">
           <article class="entry image col-md-6 col-sm-12">
             <img src="6.gif" />
             <div class="feat-overlay"></div>
               <div class="category-name">Video exclusive </div>
               <div class="category-title"> Erdal Inci </div>
+              <div class="date"> April 16 </div>
           </article>
         </a>
 
-          <a href="#">
+          <a data-toggle="modal" data-target="#post4" href="">
           <article class="entry image col-md-6 col-sm-12">
             <img src="5.jpg" />
             <div class="feat-overlay"></div>
               <div class="category-name">Editorial </div>
               <div class="category-title"> EMMA BY JAKOB LANDVIK </div>
+              <div class="date"> April 15 </div>
           </article>  
           </a>        
              
@@ -219,16 +223,64 @@ $('#myCarousel').carousel({
 
 </div>
 
-  <!--  modal 1 -->
+  <!--  modal post 1 -->
   <div id="post1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title article-title" id="myModalLabel">Oh months fate forseen</h4>
+          <h4 class="modal-title" id="myModalLabel">Paris Fashion Week</h4>
         </div>
         <div class="modal-body">
+        <h3>Street Style </h3>  
+
+        <div class="row image">
+          <div class="image col-md-12 modal-article">
+            <img src="8.jpg" />
+          </div>
+        </div>        
+
+         <div class="row">
+            <div class="col-md-12">
+              <h5>Photographs by <strong>Conan Thai</strong>
+              &nbsp; &nbsp; Styling by <strong>Adrian Manuel</strong>
+              &nbsp; &nbsp; Hair by <strong>Damian Monzillo</strong>
+              &nbsp; &nbsp; Makeup by <strong>Margina Dennis</strong>
+              &nbsp; &nbsp; Photography assistance by <strong>Kim Nunnely</strong></h5>
+            </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+         <div class="row">
+            <div class="col-md-12">
+              <h5>April 19</h5>
+            </div>
+        </div>
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <!--  modal post 2 -->
+    <div id="post2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myModalLabel">Blog Exclusive</h4>
+        </div>
+        <div class="modal-body">
+        <h3>Kyran </h3>  
+        <div class="row image">
+          <div class="image col-md-12 modal-article">
+            <img src="7.jpg" />
+        </div>
+        </div>
+
          <div class="row">
               <div class="col-md-12">
                 <h5>Photographs by <strong>Conan Thai</strong>
@@ -239,16 +291,96 @@ $('#myCarousel').carousel({
               </div>
         </div>
 
+        </div>
+        <div class="modal-footer">
+         <div class="row">
+            <div class="col-md-12">
+              <h5>April 18</h5>
+            </div>
+        </div>
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+    <!--  modal post 3 -->
+  <div id="post3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myModalLabel">Video Exclusive</h4>
+        </div>
+        <div class="modal-body">
+        <h3>Erdal Inci</h3>  
+
         <div class="row image">
-          <div class="image col-md-6 modal-article" style="background: url('5.jpg'); background-size:cover; background-repeat: no-repeat;">
+          <div class="image col-md-12 modal-article">
+            <img src="6.gif" />
           </div>
+        </div>        
+
+         <div class="row">
+            <div class="col-md-12">
+              <h5>Photographs by <strong>Conan Thai</strong>
+              &nbsp; &nbsp; Styling by <strong>Adrian Manuel</strong>
+              &nbsp; &nbsp; Hair by <strong>Damian Monzillo</strong>
+              &nbsp; &nbsp; Makeup by <strong>Margina Dennis</strong>
+              &nbsp; &nbsp; Photography assistance by <strong>Kim Nunnely</strong></h5>
+            </div>
+        </div>
 
         </div>
+        <div class="modal-footer">
+         <div class="row">
+            <div class="col-md-12">
+              <h5>April 19</h5>
+            </div>
         </div>
-        <!--<div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>-->
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <!--  modal post 4 -->
+    <div id="post4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myModalLabel">Editorial</h4>
+        </div>
+        <div class="modal-body">
+        <h3>Emma by Jakob Landvik </h3>  
+        <div class="row image">
+          <div class="image col-md-12 modal-article">
+            <img src="5.jpg" />
+        </div>
+        </div>
+
+         <div class="row">
+              <div class="col-md-12">
+                <h5>Photographs by <strong>Conan Thai</strong>
+                &nbsp; &nbsp; Styling by <strong>Adrian Manuel</strong>
+                &nbsp; &nbsp; Hair by <strong>Damian Monzillo</strong>
+                &nbsp; &nbsp; Makeup by <strong>Margina Dennis</strong>
+                &nbsp; &nbsp; Photography assistance by <strong>Kim Nunnely</strong></h5>
+              </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+         <div class="row">
+            <div class="col-md-12">
+              <h5>April 18</h5>
+            </div>
+        </div>
+        </div>
 
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
