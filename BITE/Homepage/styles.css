@@ -415,3 +415,6 @@ box-shadow: none;
   margin-left: 15px;
   margin-right: 15px;
 }
+.row .image {
+margin: 0px 0px;
+}
