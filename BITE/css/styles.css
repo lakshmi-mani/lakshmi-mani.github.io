@@ -86,7 +86,7 @@ body {
   margin-left: 22px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #nav-menu a {
     display:block;
     margin:10px;
@@ -101,6 +101,7 @@ body {
   font-size: 33px;
   font-variant: small-caps;
   letter-spacing: 3px;
+  padding: 15px 0px;
 }
 
 .navbar {
@@ -291,5 +292,8 @@ margin-bottom: 30px;
 article {
   overflow: hidden; 
   max-height: 420px;
+}
+.navbar-brand {
+padding: 15px 0px;
 }
 
