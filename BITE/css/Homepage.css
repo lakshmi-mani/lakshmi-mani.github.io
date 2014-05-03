@@ -105,7 +105,7 @@ margin-bottom: 60px;
 position: absolute;
 top: 15px;
 left: 15px;
-width: calc(100% - 30px);
+width: calc(100% - 29px);
 height: calc(100% - 30px);
 background: rgba(20,20,20,0.7);
 opacity: 0;
@@ -191,7 +191,7 @@ vertical-align: middle;
 }
 
 .date-wrapper {
-width: 100%;
+width: calc(100% + 1px);
 z-index: 8;
 display: table;
 position: relative;
