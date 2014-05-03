@@ -91,19 +91,10 @@ margin-bottom: 60px;
 
 /* ----- Posts ------ */
 
-.entry img {
-  width: 100%;
-  min-height: 100%;
-
-}
 .entry {
   overflow: hidden; 
   max-height: 420px;
 }
-/*.article-header {
-  font-family: 'Oswald', serif; 
-  font-weight: 300;  
-} */
 
 .posts .col-md-6 {
   padding: 0px;
@@ -112,10 +103,10 @@ margin-bottom: 60px;
 
 .entry .feat-overlay{
 position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+top: 15px;
+left: 15px;
+width: calc(100% - 30px);
+height: calc(100% - 30px);
 background: rgba(20,20,20,0.7);
 opacity: 0;
 -webkit-transition: opacity .3s ease-out;
@@ -199,6 +190,12 @@ vertical-align: middle;
 }
 }
 
+.date-wrapper {
+width: 100%;
+z-index: 8;
+display: table;
+position: relative;
+}
 .date {
 position: absolute;
 bottom: 0%;
@@ -219,6 +216,8 @@ text-transform: uppercase;
 box-shadow: 0 -200px 100px -100px rgba(255, 255, 255, 0.5) inset;
 -moz-box-shadow: 0 -200px 100px -100px rgba(255, 255, 255, 0.5) inset;
 -webkit-box-shadow: 0 -200px 100px -100px rgba(255, 255, 255, 0.5) inset; 
+display: table-cell;
+vertical-align: middle;
 }
 
 .entry:hover .date {
@@ -228,25 +227,12 @@ box-shadow: none;
 -webkit-box-shadow: none;
 }
 
-article img {
-  display: block;
-  width: 100%;
-}
-
 .indiv-post {
   margin-left: 15px;
   margin-right: 15px;
 }
 .row .image {
 margin: 0px 0px;
-}
-.entry:hover .entry .image {
-  box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.4) inset;
-    -moz-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.4) inset;
-    -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.4) inset; 
-}
-.article-container {
-  margin: 10px;
 }
 
 
