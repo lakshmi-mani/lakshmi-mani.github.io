@@ -23,12 +23,6 @@
     <link href="../css/Homepage.css" rel="stylesheet">
 
 
-<script>
-$('#myCarousel').carousel({
-  interval: 2000
-})
-</script>
-
   </head>
 
 
@@ -213,7 +207,7 @@ $('#myCarousel').carousel({
 
       <div class="row">
 
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
           <a href="#">
           <div class="trending">
               <div class="trending-image" style="background: url('Trending1.png'); background-size:cover; background-repeat: no-repeat; background-position: 50% 10%;"> 
@@ -223,7 +217,7 @@ $('#myCarousel').carousel({
           </a>
         </div>  
 
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
           <a href="#">
           <div class="trending">
               <div class="trending-image" style="background: url('Trending2.jpg'); background-size:cover; background-repeat: no-repeat; background-position: 50% 10%;"> 
@@ -233,7 +227,7 @@ $('#myCarousel').carousel({
           </a>
         </div>  
 
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
           <a href="#">
           <div class="trending">
               <div class="trending-image" style="background: url('Trending3.jpg'); background-size:cover; background-repeat: no-repeat; background-position: 50% 10%;"> 
@@ -243,7 +237,7 @@ $('#myCarousel').carousel({
           </a>
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
           <a href="#">
           <div class="trending">
               <div class="trending-image" style="background: url('Trending4.jpg'); background-size:cover; background-repeat: no-repeat; background-position: 50% 10%;"> 
@@ -253,7 +247,7 @@ $('#myCarousel').carousel({
           </a>
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
           <a href="#">
           <div class="trending">
               <div class="trending-image" style="background: url('Trending5.jpg'); background-size:cover; background-repeat: no-repeat; background-position: 50% 10%;"> 
@@ -263,7 +257,7 @@ $('#myCarousel').carousel({
           </a>
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
           <a href="#">
           <div class="trending">
               <div class="trending-image" style="background: url('Trending6.jpg'); background-size:cover; background-repeat: no-repeat; background-position: 50% 10%;"> 
@@ -642,6 +636,19 @@ $('#myCarousel').carousel({
 <script src="../js/docs.min.js"></script>    
 
 
+<script>
+$('#myCarousel').carousel({
+  interval: 4000,
+  pause: "false"
+})
+</script>
+
+<script>
+var cw = $('.trending-image').width();
+$('.trending-image').css({
+    'height': cw + 'px'
+});
+</script>
 
 
 </body>
