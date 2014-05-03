@@ -418,3 +418,11 @@ box-shadow: none;
 .row .image {
 margin: 0px 0px;
 }
+.entry:hover .entry .image {
+  box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.4) inset;
+    -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.4) inset; 
+}
+.article-container {
+  margin: 10px;
+}
