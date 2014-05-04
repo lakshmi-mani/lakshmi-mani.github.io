@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Justlogin</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+	<style>
+	/* ---- NAVBAR --- */
+	.navbar {
+		min-height: 64px;
+	}
+	.navbar .container {
+		width: 95%;
+	}
+	.navbar-default {
+		background-color: #FFFFFF;
+		border-top: 3px solid #be311a;
+	}
+	.navbar-brand {
+		padding: 15px;
+	}
+	.navbar-nav > li > a {
+		line-height: 37px;
+	}
+	.navbar-default .navbar-nav > li > a {
+		color: #444;
+	}
+	.navbar-right li {
+		transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+	}
+	.navbar-right li:hover {
+		background-color: #be311a;
+	}
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+		color: #FFF;
+	}
+
+	/* ---- JUMBOTRON --- */
+	.jumbotron {
+		margin-top: 64px;
+		margin-bottom: 0px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	/* ---- FEATURED PRODUCTS --- */
+	.featured-products .product {
+		background-color: #8b929c;
+		float: left;
+		padding: 20px;
+		width: 11%;
+		color: #FFF;
+		text-align: center;
+		transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+		border-right: 1px solid #FFF;
+	}
+	.featured-products .product.highlight {
+		background-color: #565d67;
+		width: 14%;
+	}
+	.featured-products .product:hover {
+		background-color: #be311a;
+	}	
+	.product-icon img {
+		width: 30px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.product-icon {
+		width: 100%;
+		text-align: center;
+	}
+	@media (max-width: 768px) {
+		.featured-products {
+			display: none;
+		}
+	}
+	/* ---- MAIN FEATURE --- */
+	.main-feature {
+		margin-top: 150px;
+		margin-bottom: 30px;
+		padding: 30px;
+	}
+	.main-feature .image img {
+		width: 100%;
+	}
+	.point img {
+		width: 32px;
+		margin: 5px;
+	}
+	.point {
+		margin: 10px;
+	}
+
+	/* ---- FEATURE LIST--- */
+	.feature-list {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.list-one {
+		background-color: #ececec;
+	}
+	.list-two {
+		background-color: #FFF;
+	}
+	.feature-list .container {
+		width: 95%;
+	}
+	.feature-list h1 {
+		text-align: center;
+	}
+	.feature-wrapper {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		padding: 15px;
+	}
+	.feature-icon img {
+		width: 52px;
+		margin: 5px;
+	}
+	.feature-title {
+		font-size: 26px;
+	}
+	@media (max-width: 768px) {
+		.feature-wrapper {
+			border-bottom: 1px solid #a2a2a2;
+			text-align: center;
+		}
+		.feature-icon {
+			width: 100%;
+			text-align: center;
+		}
+		.feature-icon img {
+			width: 92px;
+		}
+		.feature-list {
+		padding-top: 20px;
+		padding-bottom: 10px;
+		}
+	}
+	/* ---- CASE STUDY--- */
+		.casestudy {
+			background: url('casestudy.JPG');
+			padding: 50px;
+			color: #FFF;
+		}
+		.casestudy h1 {
+			text-align: center;
+		}
+		.casestudy h2 {
+			text-align: center;
+		}
+		.casestudy img {
+			width: 150px;
+		}
+		.casestudy .play-button {
+			width: 100%;
+			text-align: center;
+		}
+
+	/* ---- TESTIMONIALS --- */
+		.testimonials {
+			background-color: #ececec;
+			padding: 30px;
+			text-align: center;
+		}
+		.client-logo img {
+			max-width: 300px;
+			margin: 40px;
+		}
+		.client-logo {
+			width: 100%;
+			text-align: center;
+		}
+		.client-message {
+			max-width: 900px;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+	/* ---- CONTACT --- */
+		.contact {
+			color: #FFF;
+		}
+		.contact .container {
+			width: 75%;
+		}
+		.contact-info {
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			background-color: #565d67;
+		}
+		.contact-details {
+			text-align: center;
+			padding-bottom: 16px;
+			background-color: #313842;
+		}
+		.contact-triangle img {
+			width: 65px;
+			margin-bottom: 7px;
+		}
+		@media (max-width: 992px) { 
+			.contact-triangle img {
+				display: none;
+			}
+
+		}
+		.contact-row-one {
+			width: 100%;
+			background-color: #565d67;
+		}
+		.contact-row-two {
+			width: 100%;
+			background-color: #313842;
+		}
+		.contact-icon img {
+			width: 32px;
+			margin-bottom: 10px;
+		}
+
+	/* ---- FOOTER --- */
+		.footer {
+			background-color: #1a1e27;
+			padding: 30px;
+		}
+		.footer h2 {
+			text-align: left;
+			color: #a4aeba;
+			font-size: 24px;
+		}
+		.footer p {
+			text-align: left;
+			color: #6a6a6a;
+			font-size: 15px;
+		}
+
+	</style>
+
+
+</head>
+
+
+<body>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href=""><img src="logo.png" /></a>
+        </div>
+
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="">Products</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+	<div class="jumbotron">
+		<div class="text">
+			<h1> HR solutions </h1>
+			<p>They are amazeballs</p>
+			<button class="sign-up">Try now for FREE!</button>
+		</div>
+	</div>
+
+	<div class="featured-products">
+		<div class="product">
+			<div class="product-icon"><img src="product-icon.png" /></div>
+			<div class="product-name">eStaff</div>
+		</div>
+		<div class="product">
+			<div class="product-icon"><img src="product-icon.png" /></div>
+			<div class="product-name">eResource</div>
+		</div>		
+		<div class="product highlight">
+			<div class="product-icon"><img src="product-icon.png" /></div>
+			<div class="product-name">eTimeclock</div>
+		</div>		
+		<div class="product highlight">
+			<div class="product-icon"><img src="product-icon.png" /></div>
+			<div class="product-name">ePayroll</div>
+		</div>
+		<div class="product highlight">
+			<div class="product-icon"><img src="product-icon.png" /></div>
+			<div class="product-name">eLeave</div>
+		</div>
+		<div class="product highlight">
+			<div class="product-icon"><img src="product-icon.png" /></div>
+			<div class="product-name">eForm</div>
+		</div>		
+		<div class="product">
+			<div class="product-icon"><img src="product-icon.png" /></div>
+			<div class="product-name">e360</div>
+		</div>		
+		<div class="product">
+			<div class="product-icon"><img src="product-icon.png" /></div>
+			<div class="product-name">eSurvey</div>
+		</div>
+	</div>
+
+	<div class="main-feature">
+		<div class="container">
+
+			<div class="col-md-6">
+				<div class="image">
+					<img src="main-features.png" />
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="content">
+					<h1>HR Solutions on the cloud</h1>
+					<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="bullet points">
+						<div class="point"><img src="bullet-point.png" />Point number one is great</div>
+						<div class="point"><img src="bullet-point.png" />Point number 2 is great</div>
+						<div class="point"><img src="bullet-point.png" />Point number 3 is great</div>
+					</div>
+					<button class="sign-up">Try now for FREE!</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="feature-list list-one">
+		<div class="container">
+			<h1>Designed with your convenience in mind</h1>
+			<div class="col-sm-6">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="feature-icon.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Easy breezy setup</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="feature-icon.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">No maintanence</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="feature-icon.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Simple to use</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="feature-icon.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Dedicated support</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="casestudy">
+		<div class="container">
+			<div class="col-md-12">
+				<h1> Find out how Air France manages <br>their workforce better with Justlogin </h1>
+				<h2> Click here to watch </h2>
+				<div class="play-button">
+					<img src="Play.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="feature-list list-two">
+		<div class="container">
+			<h1>Hassle free HR</h1>
+			<div class="col-sm-6">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="feature-icon.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Integration</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="feature-icon.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Reports</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="feature-icon.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Pay per use</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="feature-icon.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Security</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="testimonials">
+		<div class="container">
+			<h1>What our customers have to say</h1>
+			<div class="client-logo"><img src="ikea.jpg" /></div>
+			<div class="client-message">
+				We are impressed with JustLogins electronic leave system, and even at this early stage, we are beginning to experience costs savings and increased productivity in our human resources function ... 
+			</div>
+			<div class="client-name">Eileen Koh</div>
+			<div class="client-company">Human Resource Manager</div>
+		</div>
+	</div>
+
+	<div class="contact">
+		<div class="contact-row-one">
+			<div class="container">
+				<div class="col-md-3 contact-info phone">
+					<div class="contact-icon"><img src="phone.png" /></div>
+					<div class="contact-name">Phone</div>
+				</div>
+				<div class="col-md-3 contact-info email">
+					<div class="contact-icon"><img src="phone.png" /></div>
+					<div class="contact-name">Email</div>
+				</div>
+				<div class="col-md-3 contact-info livechat">
+					<div class="contact-icon"><img src="phone.png" /></div>
+					<div class="contact-name">Livechat</div>
+				</div>
+				<div class="col-md-3 contact-info facebook">
+					<div class="contact-icon"><img src="phone.png" /></div>
+					<div class="contact-name">Facebook</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact-row-two">
+			<div class="container">
+				<div class="col-md-3 contact-details phone">
+					<div class="contact-triangle"><img src="triangle.png" /></div>
+					<div class="contact-name">+65 6476 5330</div>
+				</div>
+				<div class="col-md-3 contact-details email">
+					<div class="contact-triangle"><img src="triangle.png" /></div>
+					<div class="contact-name">sales@justlogin.com</div>
+				</div>
+				<div class="col-md-3 contact-details livechat">
+					<div class="contact-triangle"><img src="triangle.png" /></div>
+					<div class="contact-name">Click here</div>
+				</div>
+				<div class="col-md-3 contact-details facebook">
+					<div class="contact-triangle"><img src="triangle.png" /></div>
+					<div class="contact-name">Like us</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3">
+				<h2> About Us </h2>
+				<p> Company Overview </p>
+				<p>Partner</p>
+				<p>Privacy Policy</p>
+				<p>Terms of Service</p>
+				<p>Careers</p>
+			</div>
+			<div class="col-md-3">
+				<h2> Products </h2>
+				<p> eLeave</p>
+				<p>ePayroll</p>
+				<p>eTimeclock</p>
+				<p>eForm</p>
+				<p>eStaff</p>
+				<p>eResource</p>
+				<p>eBenefit</p>
+				<p>e360</p>
+				<p>eSurvey	</p>
+			</div>
+			<div class="col-md-3">
+				<h2> Resources </h2>
+				<p> FAQs </p>
+				<p>Sitemap</p>
+				<p>Pricing</p>
+				<p>Video demos</p>
+				<p> Blog</p>
+			</div>
+			<div class="col-md-3">
+				<h2> Keep up/Newsletter signup </h2>
+				These are social things. Follow us to keep up to date with latest HR policies etc.
+				
+			</div>
+		</div>
+	</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>    
+<script src="js/docs.min.js"></script>   
+
+</body>
+
+
+
+
+</html>
