@@ -54,6 +54,13 @@
 	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 		color: #FFF;
 	}
+	.sign-in {
+		width: 91px;
+		height: 49px;
+		background-color: #be311a;
+		color: #fff;
+		margin-top: 10px;
+	}
 
 	/* ---- JUMBOTRON --- */
 	.jumbotron {
@@ -121,7 +128,7 @@
 	.main-feature {
 		margin-top: 100px;
 		padding: 30px;
-		background: url('greyzz_@2X.png');
+		background: url('section-bg.png');
 		padding-top: 80px;
 		padding-bottom: 50px;
 	}
@@ -140,11 +147,14 @@
 	.point {
 		margin: 10px;
 	}
+	.main-feature .content {
+		margin-left: 30px;
+	}
 
 	/* ---- FEATURE LIST--- */
 	.feature-list {
 		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-bottom: 60px;
 	}
 	.list-one {
 		background-color: #ececec;
@@ -152,10 +162,12 @@
 	}
 	.list-two {
 		background-color: #FFF;
-		background: url('greyzz_@2X.png');
+		background: url('section-bg.png');
+		
 	}
 	.feature-list .container {
 		width: 95%;
+		max-width: 1200px;
 	}
 	.feature-list h1 {
 		text-align: center;
@@ -170,7 +182,7 @@
 		margin: 5px;
 	}
 	.feature-title {
-		font-size: 26px;
+		font-size: 24px;
 	}
 	@media (max-width: 768px) {
 		.feature-wrapper {
@@ -205,7 +217,8 @@
 		}
 		.casestudy h1 {
 			text-align: center;
-			text-shadow: 0 3px 3px rgba(0,0,0,0.8);
+			text-shadow: 0 3px 3px rgba(0,0,0,0.7);
+			font-size: 42px;
 		}
 		.casestudy h2 {
 			text-align: center;
@@ -225,7 +238,8 @@
 		.testimonials {
 			background-color: #ececec;
 			background: url('bg.jpg');
-			padding: 30px;
+			padding-top: 50px;
+			padding-bottom: 60px;
 			text-align: center;
 		}
 		.client-logo img {
@@ -268,6 +282,7 @@
 		}
 		.contact .container {
 			width: 75%;
+			max-width: 1200px;
 		}
 		.contact-info {
 			text-align: center;
@@ -331,6 +346,7 @@
 		}
 		.footer .container {
 			width: 85%;
+			max-width: 1200px;
 		}
 
 	</style>
@@ -359,6 +375,7 @@
             <li><a href="">Features</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact Us</a></li>
+            <li><button class="sign-in"><a href="">Sign In</a></button></li>
           </ul>
         </div>
 
@@ -490,8 +507,8 @@
 
 	<div class="casestudy">
 		<div class="container">
-			<div class="col-md-12">
-				<h1> Find out how Air France manages <br>their workforce better with Justlogin </h1>
+			<div class="col-md-8 col-md-offset-2">
+				<h1> Find out how Air France manages their workforce better with Justlogin </h1>
 				
 				<div class="play-button">
 					<img src="Play.png" />
