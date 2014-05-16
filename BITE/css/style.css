@@ -103,6 +103,10 @@ body {
   #nav-menu button {
     margin:10px;
   }
+  #nav-menu {
+    margin-top: 45px;
+    margin-left: 35%;
+  }
 }
 .navbar-header .navbar-brand {
   color:white;
@@ -295,12 +299,18 @@ margin: 30px auto;
   width: 100%;
   text-align: center;
   right: inherit;
+  padding: 10px 1px;
 }
 }
 @media (max-width: 1102px) and (min-width: 993px) {
-      #nav-menu a {
-    margin-right: 45px;
+  #nav-menu a {
+    margin-right: 35px;
     margin-left: 0px;
+}
+  #nav-menu {
+    margin-top: 20px;
+    margin-left: 22%;
+}
 }
 
 
