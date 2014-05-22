@@ -66,14 +66,14 @@
 	.jumbotron {
 		margin-top: 64px;
 		margin-bottom: 0px;
-		padding-top: 150px;
-		padding-bottom: 340px;
-		background-color: #333; 
+		height: 500px;
+		background-color: #FFF;
+		background-image: url('jumbotron.jpg'); 
 		background-size: cover;
 		background-position: 90% 89%;
 		text-align: left;
 		color: #FFF;
-		padding-left: 70px;
+		padding: 100px 155px 0px 70px;
 	}
 	.jumbotron .text {
 		margin-bottom: 40px;
@@ -81,16 +81,38 @@
 	.jumbotron h1 {
 		text-shadow: 0 3px 3px rgba(0,0,0,0.8);
 	}
+	.jumbotron-image {
+		position: absolute;
+		bottom: -399px;
+	}
+	.jumbotron-image img {
+		width: 100%;
+		min-width: 500px;
+	}
+	@media (max-width: 767px) {
+		.jumbotron {
+			min-height: 650px;
+		}
+		.jumbotron-image {
+			bottom: -353px;
+		}
+		.jumbotron-image img {
+			max-width: 500px;
+		}	
+	}
 
 
 	/* ---- FEATURED PRODUCTS --- */
+	.featured-products .container {
+		width: 85%;
+	}
 	.featured-products .product {
-		background-color: #565d67;
+		background-color: #FFF;
 		float: left;
 		padding-top: 20px;
 		padding-bottom: 20px;
 		width: 11%;
-		color: #ececec;
+		color: #4d4d4d;
 		text-align: center;
 		transition: all .25s ease-in-out;
 		-moz-transition: all .25s ease-in-out;
@@ -98,7 +120,7 @@
 		border-right: 1px solid #FFF;
 	}
 	.featured-products .product.highlight {
-		background-color: #313842;
+		background-color: #FFF;
 		width: 14%;
 		/*height: 116px;
 		margin-top: -7px;
@@ -384,46 +406,52 @@
 
 <!--<div class="container">-->
 	<div class="jumbotron">
-		<div class="text">
-			<div class="col-md-7">
+			<div class="col-sm-6">
 				<h1>HR solutions for your modern business </h1>
 				<button class="sign-up">Try now for FREE!</button>
 			</div>
-		</div>
+
+			<div class="col-sm-6">
+				<div class="jumbotron-image">
+					<img src="jumbotron-laptop.png" />
+				</div>
+			</div>
 	</div>
 
 	<div class="featured-products">
-		<div class="product">
-			<div class="product-icon"><img src="product-icon.png" /></div>
-			<div class="product-name">eStaff</div>
-		</div>
-		<div class="product">
-			<div class="product-icon"><img src="product-icon.png" /></div>
-			<div class="product-name">eResource</div>
-		</div>		
-		<div class="product highlight">
-			<div class="product-icon"><img src="product-icon.png" /></div>
-			<div class="product-name">eTimeclock</div>
-		</div>		
-		<div class="product highlight">
-			<div class="product-icon"><img src="product-icon.png" /></div>
-			<div class="product-name">ePayroll</div>
-		</div>
-		<div class="product highlight">
-			<div class="product-icon"><img src="product-icon.png" /></div>
-			<div class="product-name">eLeave</div>
-		</div>
-		<div class="product highlight">
-			<div class="product-icon"><img src="product-icon.png" /></div>
-			<div class="product-name">eForm</div>
-		</div>		
-		<div class="product">
-			<div class="product-icon"><img src="product-icon.png" /></div>
-			<div class="product-name">e360</div>
-		</div>		
-		<div class="product">
-			<div class="product-icon"><img src="product-icon.png" /></div>
-			<div class="product-name">eSurvey</div>
+		<div class="container">
+			<div class="product">
+				<div class="product-icon"><img src="eStaff-icon.png" /></div>
+				<div class="product-name">eStaff</div>
+			</div>
+			<div class="product">
+				<div class="product-icon"><img src="eResource-icon.png" /></div>
+				<div class="product-name">eResource</div>
+			</div>		
+			<div class="product highlight">
+				<div class="product-icon"><img src="eTimeclock-icon.png" /></div>
+				<div class="product-name">eTimeclock</div>
+			</div>		
+			<div class="product highlight">
+				<div class="product-icon"><img src="ePayroll-icon.png" /></div>
+				<div class="product-name">ePayroll</div>
+			</div>
+			<div class="product highlight">
+				<div class="product-icon"><img src="eLeave-icon.png" /></div>
+				<div class="product-name">eLeave</div>
+			</div>
+			<div class="product highlight">
+				<div class="product-icon"><img src="eForm-icon.png" /></div>
+				<div class="product-name">eForm</div>
+			</div>		
+			<div class="product">
+				<div class="product-icon"><img src="e360-icon.png" /></div>
+				<div class="product-name">e360</div>
+			</div>		
+			<div class="product">
+				<div class="product-icon"><img src="eSurvey-icon.png" /></div>
+				<div class="product-name">eSurvey</div>
+			</div>
 		</div>
 	</div>
 
