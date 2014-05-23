@@ -11,6 +11,7 @@
 	<title>Justlogin</title>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Roboto+Condensed:400,300,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Open+Sans+Condensed:300|Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
 
 	<style>
 
@@ -56,10 +57,39 @@
 	}
 	.sign-in {
 		width: 91px;
-		height: 49px;
+		height: 45px;
 		background-color: #be311a;
 		color: #fff;
-		margin-top: 10px;
+		margin-top: 12px;
+		display: inherit;
+		border: none;
+		border-radius: 11px;
+	}
+	.sign-in:hover {
+		background-color: #AF3535;
+	}
+	.sign-in a {
+		text-decoration: none;
+		color: #FFF;
+	}
+	@media (min-width: 768px) and (max-width: 992px) {
+		.jumbotron h1 {
+			font-size: 50px;
+		}
+		.jumbotron .col-sm-6.title {
+			position: relative;
+		}
+		.jumbotron {
+			height: 400px;
+			padding-top: 60px;
+			padding-left: 40px;
+		}
+		ul.navbar-nav > li:nth-child(4) {
+			display: none;
+		}
+		.nav > li > a {
+			padding: 10px 14px;
+			}
 	}
 
 	/* ---- JUMBOTRON --- */
@@ -72,37 +102,83 @@
 		background-size: cover;
 		background-position: 90% 89%;
 		text-align: left;
-		color: #FFF;
+		color: #333;
 		padding: 100px 155px 0px 70px;
 	}
 	.jumbotron .text {
 		margin-bottom: 40px;
 	}
 	.jumbotron h1 {
-		text-shadow: 0 3px 3px rgba(0,0,0,0.8);
+		color: #333;
 	}
 	.jumbotron-image {
 		position: absolute;
-		bottom: -399px;
+		bottom: 0;
 	}
 	.jumbotron-image img {
 		width: 100%;
 		min-width: 500px;
 	}
+	@media (min-width: 992px) {
+		.jumbotron .col-sm-6.title {
+			padding-top: 7%;
+		}
+
+	}
+	
+	@media (min-width: 768px) and (max-width: 992px) {
+		.jumbotron h1 {
+			font-size: 50px;
+		}
+		.jumbotron .col-sm-6.title {
+			position: relative;
+		}
+		.jumbotron {
+			height: 400px;
+			padding-top: 60px;
+			padding-left: 40px;
+		}
+	}
+	@media (min-width: 768px) {
+		.jumbotron .col-sm-6 {
+			height: 100%;
+		}
+		.jumbotron h1 {
+			font-size: 50px;
+		}
+	}
 	@media (max-width: 767px) {
 		.jumbotron {
-			min-height: 650px;
-		}
-		.jumbotron-image {
-			bottom: -353px;
+			min-height: 500px;
+			padding: 30px 30px 0px 30px;
 		}
 		.jumbotron-image img {
 			max-width: 500px;
 		}	
+		.jumbotron .col-sm-6 {
+			height: 48%;
+		}
+		.jumbotron h1 {
+			text-align: center;
+		}
+		.sign-up {
+		margin: 0 auto;
+		display: block;
+		}
+	}
+	.sign-up {
+		background-color: #43974c;
+		padding: 15px;
+		border: none;
+		border-radius: 10px;
+		color: #FFF;
 	}
 
-
 	/* ---- FEATURED PRODUCTS --- */
+	.featured-products {
+		border-top: 1px solid #ececec;
+		border-bottom: 1px solid #ececec;;
+	}
 	.featured-products .container {
 		width: 85%;
 	}
@@ -111,32 +187,44 @@
 		float: left;
 		padding-top: 20px;
 		padding-bottom: 20px;
-		width: 11%;
+		width: 12.5%;
 		color: #4d4d4d;
 		text-align: center;
 		transition: all .25s ease-in-out;
 		-moz-transition: all .25s ease-in-out;
 		-webkit-transition: all .25s ease-in-out;
 		border-right: 1px solid #FFF;
+		font-size: 15px;
+		border-right: 1px solid #ececec;
 	}
-	.featured-products .product.highlight {
-		background-color: #FFF;
-		width: 14%;
-		/*height: 116px;
-		margin-top: -7px;
-		padding-top: 30px; */
-		font-size: 17px;
+	@media (min-width: 768px) and (max-width: 992px) {
+		.featured-products .product {
+			font-size: 14px;
+		}
 	}
+	.featured-products .product:nth-child(1) {
+		border-left: 1px solid #ececec;
+	}
+
 	.featured-products .product:hover {
-		background-color: #be311a;
-		color: #fff;
+		background-color: #FAF7F7;
+		color: #4d4d4d;
 	}	
 
 	.product-icon img {
-		width: 30px;
+		width: 45px;
 		margin: 0 auto;
 		margin-bottom: 10px;
+		/*filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+		/*filter: gray; /* IE6-9 */
+		/*-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 	}
+
+	/*.product:hover .product-icon img {
+	  filter: none;
+	  -webkit-filter: grayscale(0%);
+	} */
+
 	.product-icon {
 		width: 100%;
 		text-align: center;
@@ -148,16 +236,10 @@
 	}
 	/* ---- MAIN FEATURE --- */
 	.main-feature {
-		margin-top: 100px;
 		padding: 30px;
 		background: url('section-bg.png');
 		padding-top: 80px;
 		padding-bottom: 50px;
-	}
-	@media (max-width: 768px) {
-		.main-feature {
-			margin-top: 50px;
-		}
 	}
 	.main-feature .image img {
 		width: 100%;
@@ -273,7 +355,7 @@
 			text-align: center;
 		}
 		.client-message {
-			max-width: 900px;
+			max-width: 800px;
 			text-align: center;
 			margin: 0 auto;
 		}
@@ -297,7 +379,30 @@
 			font-family: "Times New Roman", serif;
 			margin-top: -40px; */
 		}
+		.carousel-inner > .item {
+			min-height: 450px;
+		}
+		.carousel-inner > .item {
+			min-height: 450px;
+		}
+		.carousel-control.left {
+			background: none;
+		}
+		.carousel-control.right {
+			background: none;
+		}
+		@media (max-width: 992px) {
+			.client-message {
+				max-width: 600px;
+			}
 
+		}
+		@media (max-width: 480px) {
+			.client-message {
+				max-width: 300px;
+			}
+
+		}
 	/* ---- CONTACT --- */
 		.contact {
 			color: #FFF;
@@ -397,21 +502,27 @@
             <li><a href="">Features</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact Us</a></li>
-            <li><button class="sign-in"><a href="">Sign In</a></button></li>
           </ul>
+
+          <div class="navbar-right">
+        	<ul class="nav">
+        		<button class="sign-in"><a href="">Sign In</a></button>
+        	</ul>
         </div>
 
+        </div>
+        
       </div>
     </div>
 
 <!--<div class="container">-->
 	<div class="jumbotron">
-			<div class="col-sm-6">
+			<div class="col-sm-6 title">
 				<h1>HR solutions for your modern business </h1>
 				<button class="sign-up">Try now for FREE!</button>
 			</div>
 
-			<div class="col-sm-6">
+			<div class="col-sm-6 col-xs-12">
 				<div class="jumbotron-image">
 					<img src="jumbotron-laptop.png" />
 				</div>
@@ -460,7 +571,7 @@
 
 			<div class="col-md-6">
 				<div class="image">
-					<img src="main-features.png" />
+					<img src="main-features2.png" />
 				</div>
 			</div>
 
@@ -603,12 +714,53 @@
 	<div class="testimonials">
 		<div class="container">
 			<h1>What our customers have to say</h1>
-			<div class="client-logo"><img src="ikea.jpg" /></div>
-			<div class="client-message">
-				We are impressed with JustLogins electronic leave system, and even at this early stage, we are beginning to experience costs savings and increased productivity in our human resources function ... 
+
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+					<div class="client-logo"><img src="ikea.jpg" /></div>
+					<div class="client-message">
+						Using JustLogin obviously means greater convenience for our staff leading to their enhanced productivity.... There are also greater cost savings, since manpower is used more efficiently now - there is no longer the hassle of tracking leave applications and processing of suggestions manually.
+					</div>
+					<div class="client-name">Eileen Koh</div>
+					<div class="client-company"><em>Human Resource Manager</em></div>
+			    </div>
+			    <div class="item">
+			    	<div class="client-logo"><img src="att.png" /></div>
+					<div class="client-message">
+						We are impressed with JustLogins electronic leave system, and even at this early stage, we are beginning to experience costs savings and increased productivity in our human resources function ... 
+					</div>
+					<div class="client-name">Amelia Chan</div>
+					<div class="client-company"><em>Human Resource Director</em></div>
+			    </div>
+			    <div class="item">
+			    	<div class="client-logo"><img src="pmo.png" /></div>
+					<div class="client-message">
+						Justlogin's eLeave and ePayroll software is very user-friendly, reliable and web-based. They have been our service provider for many years, their service have been prompt, competent and accommodating.
+					</div>
+					<div class="client-name">Kevin Koh</div>
+					<div class="client-company"><em>Chief Operating Officer</em></div>
+			    </div>
+			   </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </a>
 			</div>
-			<div class="client-name">Eileen Koh</div>
-			<div class="client-company"><em>Human Resource Manager</em></div>
+
+
 		</div>
 	</div>
 
