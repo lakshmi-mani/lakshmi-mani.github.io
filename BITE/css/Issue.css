@@ -206,6 +206,10 @@ position: absolute;
 .overlay {
   height: 100%;
 }
+.modal-body {
+position: relative;
+padding: 15px 40px;
+}
 .modal-lg {
 width: 90%;
 }
@@ -236,3 +240,4 @@ text-align: center;
 font-family: 'Raleway', serif;
 line-height: 23px;
 }
+

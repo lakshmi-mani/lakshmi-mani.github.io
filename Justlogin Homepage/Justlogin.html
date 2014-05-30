@@ -12,6 +12,7 @@
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Roboto+Condensed:400,300,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Open+Sans+Condensed:300|Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Droid+Sans|Lato|PT+Sans|PT+Sans+Narrow|Yanone+Kaffeesatz|Open+Sans|Roboto|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
 	<style>
 
@@ -52,6 +53,9 @@
 	.navbar-right li:hover {
 		background-color: #be311a;
 	}
+	.navbar-right li:hover .navbar-right li:hover {
+		color: #FFF;
+	}
 	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 		color: #FFF;
 	}
@@ -64,6 +68,7 @@
 		display: inherit;
 		border: none;
 		border-radius: 11px;
+		margin-left: 15px;
 	}
 	.sign-in:hover {
 		background-color: #AF3535;
@@ -96,28 +101,33 @@
 	.jumbotron {
 		margin-top: 64px;
 		margin-bottom: 0px;
-		height: 500px;
+		height: 643px;
 		background-color: #FFF;
 		background-image: url('jumbotron.jpg'); 
 		background-size: cover;
 		background-position: 90% 89%;
 		text-align: left;
 		color: #333;
-		padding: 100px 155px 0px 70px;
+		padding: 80px 155px 0px 70px;
 	}
 	.jumbotron .text {
 		margin-bottom: 40px;
 	}
 	.jumbotron h1 {
 		color: #333;
+		text-align: center;
 	}
 	.jumbotron-image {
-		position: absolute;
-		bottom: 0;
+		max-width: 650px;
+		margin-top: 18px;
+		margin: 0 auto;
 	}
 	.jumbotron-image img {
 		width: 100%;
 		min-width: 500px;
+	}
+	.jumbotron .title {
+		margin-bottom: 30px;
 	}
 	@media (min-width: 992px) {
 		.jumbotron .col-sm-6.title {
@@ -128,13 +138,13 @@
 	
 	@media (min-width: 768px) and (max-width: 992px) {
 		.jumbotron h1 {
-			font-size: 50px;
+			font-size: 45px;
 		}
 		.jumbotron .col-sm-6.title {
 			position: relative;
 		}
 		.jumbotron {
-			height: 400px;
+			height: 621px;
 			padding-top: 60px;
 			padding-left: 40px;
 		}
@@ -144,13 +154,13 @@
 			height: 100%;
 		}
 		.jumbotron h1 {
-			font-size: 50px;
+			font-size: 45px;
 		}
 	}
 	@media (max-width: 767px) {
 		.jumbotron {
-			min-height: 500px;
 			padding: 30px 30px 0px 30px;
+			height: 515px;
 		}
 		.jumbotron-image img {
 			max-width: 500px;
@@ -167,11 +177,13 @@
 		}
 	}
 	.sign-up {
-		background-color: #43974c;
+		background-color: #06c;
 		padding: 15px;
 		border: none;
 		border-radius: 10px;
 		color: #FFF;
+		margin: 15px auto;
+		display: block;
 	}
 
 	/* ---- FEATURED PRODUCTS --- */
@@ -262,7 +274,7 @@
 	}
 	.list-one {
 		background-color: #ececec;
-		background: url('bg.jpg');
+		background: url('pattern.jpg');
 	}
 	.list-two {
 		background-color: #FFF;
@@ -318,10 +330,11 @@
 			color: #FFF;
 			padding-top: 100px;
 			padding-bottom: 80px;
+			background-size: cover;
 		}
 		.casestudy h1 {
 			text-align: center;
-			text-shadow: 0 3px 3px rgba(0,0,0,0.7);
+			text-shadow: 0 1px 59px rgba(0,0,0,0.5);
 			font-size: 42px;
 		}
 		.casestudy h2 {
@@ -341,7 +354,7 @@
 	/* ---- TESTIMONIALS --- */
 		.testimonials {
 			background-color: #ececec;
-			background: url('bg.jpg');
+			background: url('pattern.jpg');
 			padding-top: 50px;
 			padding-bottom: 60px;
 			text-align: center;
@@ -517,12 +530,12 @@
 
 <!--<div class="container">-->
 	<div class="jumbotron">
-			<div class="col-sm-6 title">
+			<div class="col-sm-12 title">
 				<h1>HR solutions for your modern business </h1>
-				<button class="sign-up">Try now for FREE!</button>
+				<button class="sign-up">Give Justlogin a try - It's free for 14 days</button>
 			</div>
 
-			<div class="col-sm-6 col-xs-12">
+			<div class="col-sm-12">
 				<div class="jumbotron-image">
 					<img src="jumbotron-laptop.png" />
 				</div>
