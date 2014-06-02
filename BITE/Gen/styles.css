@@ -63,12 +63,12 @@
   color: #000;
   padding: 8px 20px;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
   font-family: 'Raleway', serif;
   line-height: 23px;
 }
 .people {
-  text-align: center;
+  text-align: left;
 }
 
 .description.container {

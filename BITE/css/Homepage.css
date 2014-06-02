@@ -265,7 +265,7 @@ margin: 0px 0px;
   -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.2) inset;
   width: calc(100% - 29px);  
   position: absolute;
-  bottom: 0;
+  bottom: calc(0% + 15px);
 
 }
 .trending-section .category-title {
