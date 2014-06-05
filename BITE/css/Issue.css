@@ -238,6 +238,7 @@ font-size: 29px;
 text-align: center;
 font-family: 'Quicksand', serif;
 padding-bottom: 18px;
+text-transform: capitalize;
 }
 .issue-title-wrap-row2 {
   width: 99%;
@@ -256,5 +257,9 @@ line-height: 23px;
 @media (max-width: 991px) {
     #main {
       margin-top: 120px;
+    }
+
+    h5 {
+      font-size: 14px;
     }
 }
