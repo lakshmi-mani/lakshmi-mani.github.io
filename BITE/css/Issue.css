@@ -10,8 +10,8 @@
   .colheight-sm-1 {
     height: 200px;
   }
-    .colheight-sm-3 {
-    height: 420px;
+  .colheight-sm-3 {
+    min-height: 600px;
   }
 }
 
@@ -123,8 +123,8 @@
     -moz-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.8) inset;
     -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.8) inset;
   position: absolute;
-  height: 98.5%;
-  width: 98%;
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
   z-index: 8;
   top: 0;
   margin-top: 3px;
@@ -163,8 +163,8 @@ opacity: 1;
     -moz-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.8) inset;
     -webkit-box-shadow: 0 -200px 100px -100px rgba(0, 0, 0, 0.8) inset;
   position: absolute;
-  height: 98%;
-  width: 99%;
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
   z-index: 10;
   top: 0;
   margin-top: 3px;
