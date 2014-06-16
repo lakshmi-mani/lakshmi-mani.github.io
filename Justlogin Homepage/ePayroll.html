@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>Justlogin</title>
+	<title>ePayroll</title>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Roboto+Condensed:400,300,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Open+Sans+Condensed:300|Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
@@ -93,7 +93,7 @@
 			display: none;
 		}
 		.nav > li > a {
-			padding: 10px 14px;
+			padding: 10px 12px;
 			}
 	}
 
@@ -101,21 +101,22 @@
 	.jumbotron {
 		margin-top: 64px;
 		margin-bottom: 0px;
-		height: 643px;
-		background-color: #FFF;
-		background-image: url('jumbotron.jpg'); 
-		background-size: cover;
-		background-position: 90% 89%;
+		height: 485px;
+		background-color: #000;
+      	background-image: url(ePayroll-Hand.png), url(ePayroll-Header2.jpg);
+      	background-repeat: no-repeat;
+      	background-position: 100% 100%; 
 		text-align: left;
 		color: #333;
-		padding: 80px 155px 0px 70px;
+		padding: 150px 155px 0px 115px;
 	}
 	.jumbotron .text {
 		margin-bottom: 40px;
 	}
 	.jumbotron h1 {
-		color: #333;
-		text-align: center;
+		color: #FFF;
+		text-align: left;
+		text-shadow: 1px 1px 6px #555;
 	}
 	.jumbotron-image {
 		max-width: 650px;
@@ -144,8 +145,7 @@
 			position: relative;
 		}
 		.jumbotron {
-			height: 621px;
-			padding-top: 60px;
+			height: 485px;
 			padding-left: 40px;
 		}
 	}
@@ -159,8 +159,10 @@
 	}
 	@media (max-width: 767px) {
 		.jumbotron {
-			padding: 30px 30px 0px 30px;
+			padding: 10px 30px 0px 30px;
 			height: 515px;
+			background-position: 100% 100%; 
+
 		}
 		.jumbotron-image img {
 			max-width: 500px;
@@ -182,7 +184,6 @@
 		border: none;
 		border-radius: 10px;
 		color: #FFF;
-		margin: 15px auto;
 		display: block;
 	}
 
@@ -354,10 +355,13 @@
 	/* ---- TESTIMONIALS --- */
 		.testimonials {
 			background-color: #ececec;
-			background: url('pattern.jpg');
+			background: url('section-bg.png');
 			padding-top: 50px;
 			padding-bottom: 60px;
 			text-align: center;
+		}
+		.testimonials .col-sm-4 {
+			padding: 0px 30px;
 		}
 		.client-logo img {
 			max-width: 300px;
@@ -374,7 +378,7 @@
 		}
 		.client-name {
 			font-weight: 900;
-			margin-top: 40px;
+			margin-top: 20px;
 			font-size: 18px;
 		}
 		.client-company {
@@ -391,6 +395,10 @@
 			font-size: 40px;
 			font-family: "Times New Roman", serif;
 			margin-top: -40px; */
+		}
+		.client-face .img-circle {
+			max-width: 150px;
+			background-color: red;
 		}
 		.carousel-inner > .item {
 			min-height: 450px;
@@ -530,19 +538,14 @@
 
 <!--<div class="container">-->
 	<div class="jumbotron">
-			<div class="col-sm-12 title">
-				<h1>HR solutions for your modern business </h1>
-				<button class="sign-up">Give Justlogin a try - It's free for 14 days</button>
+			<div class="col-sm-7 col-xs-12 title">
+				<h1>Payroll redefined, for your modern business </h1>
+				<button class="sign-up">Try now for free for 14 days</button>
 			</div>
 
-			<div class="col-sm-12">
-				<div class="jumbotron-image">
-					<img src="jumbotron-laptop.png" />
-				</div>
-			</div>
 	</div>
 
-	<div class="featured-products">
+	<!--<div class="featured-products">
 		<div class="container">
 			<div class="product">
 				<div class="product-icon"><img src="eStaff-icon.png" /></div>
@@ -552,10 +555,10 @@
 				<div class="product-icon"><img src="eResource-icon.png" /></div>
 				<div class="product-name">eResource</div>
 			</div>		
-			<a href="eTimeclock.html"><div class="product highlight">
+			<div class="product highlight">
 				<div class="product-icon"><img src="eTimeclock-icon.png" /></div>
 				<div class="product-name">eTimeclock</div>
-			</div></a>		
+			</div>		
 			<div class="product highlight">
 				<div class="product-icon"><img src="ePayroll-icon.png" /></div>
 				<div class="product-name">ePayroll</div>
@@ -577,25 +580,25 @@
 				<div class="product-name">eSurvey</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<div class="main-feature">
 		<div class="container">
 
 			<div class="col-md-6">
 				<div class="image">
-					<img src="main-features2.png" />
+					<img src="jumbotron-laptop.png" />
 				</div>
 			</div>
 
 			<div class="col-md-6">
 				<div class="content">
-					<h1>HR Solutions on the cloud</h1>
-					<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<h1>Payroll that doesn't cause headaches!</h1>
+					<p> No more complex clocking into work. No more worrying about buddy punching. No more worrying about keeping an eye on your employees.</p>
 					<div class="bullet points">
-						<div class="point"><img src="bullet-point.png" />Point number one</div>
-						<div class="point"><img src="bullet-point.png" />Point number two </div>
-						<div class="point"><img src="bullet-point.png" />Point number three </div>
+						<div class="point"><img src="bullet-point.png" />Eradicate buddy punching</div>
+						<div class="point"><img src="bullet-point.png" />Hassle free time attendance </div>
+						<div class="point"><img src="bullet-point.png" />Get a handle on your workforce</div>
 					</div>
 					<button class="sign-up">Try now for FREE!</button>
 				</div>
@@ -606,14 +609,19 @@
 
 	<div class="feature-list list-one">
 		<div class="container">
-			<h1>Designed with your convenience in mind</h1>
+			<h1>No more worrying about buddy punching</h1><br>
+			<div class="col-sm-12" align="center">
+				<p>During clock in or out, the time, the location and the photo of staff member will be captured using the iPad or phone camera.
+
+				With eTimeclock, there is also no need for manual data extraction, as all of the data is stored in the cloud, and can be captured in real time.</p><br>
+				<img src="eTimeclock-photo location.gif" width="100%"/></div>
 			<div class="col-md-6 col-sm-12">
 				<div class="feature-wrapper">
 					<div class="col-sm-2">
 						<div class="feature-icon"><img src="1a.png" /></div>
 					</div>
 					<div class="col-sm-10">
-						<div class="feature-title">Easy breezy setup</div>
+						<div class="feature-title">Photo captures</div>
 						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
 					</div>
 				</div>
@@ -625,7 +633,7 @@
 						<div class="feature-icon"><img src="1b.png" /></div>
 					</div>
 					<div class="col-sm-10">
-						<div class="feature-title">No maintanence</div>
+						<div class="feature-title">GPS Location capture</div>
 						<div class="feature-description">Duis autem vel eum iriure dolor in hat vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
 					</div>
 				</div>
@@ -637,7 +645,7 @@
 						<div class="feature-icon"><img src="1c.png" /></div>
 					</div>
 					<div class="col-sm-10">
-						<div class="feature-title">Simple to use</div>
+						<div class="feature-title">Lightning fast calculations</div>
 						<div class="feature-description">Molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
 					</div>
 				</div>
@@ -649,7 +657,7 @@
 						<div class="feature-icon"><img src="1d.png" /></div>
 					</div>
 					<div class="col-sm-10">
-						<div class="feature-title">Dedicated support</div>
+						<div class="feature-title">Flexible</div>
 						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et </div>
 					</div>
 				</div>
@@ -657,7 +665,7 @@
 		</div>
 	</div>
 
-	<div class="casestudy">
+	<!--<div class="casestudy">
 		<div class="container">
 			<div class="col-md-8 col-md-offset-2">
 				<h1> Find out how Air France manages their workforce better with Justlogin </h1>
@@ -721,56 +729,43 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	
 
 	<div class="testimonials">
 		<div class="container">
-			<h1>What our customers have to say</h1>
+			<h1>What our customers have to say</h1><br><br>
 
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
-
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
-			    <div class="item active">
-					<div class="client-logo"><img src="ikea.jpg" /></div>
+				<div class="col-sm-4">
+					<!--<div class="client-logo"><img src="ikea.jpg" /></div>-->
 					<div class="client-message">
-						Using JustLogin obviously means greater convenience for our staff leading to their enhanced productivity.... There are also greater cost savings, since manpower is used more efficiently now - there is no longer the hassle of tracking leave applications and processing of suggestions manually.
+						Using JustLogin obviously means greater convenience for our staff leading to their enhanced productivity. There are also greater cost savings, since manpower is used more efficiently now - there is no.
 					</div>
+					<div class="client-face"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/uxceo/128.jpg" width="100" style="margin-top: 30px;"/></div>
 					<div class="client-name">Eileen Koh</div>
 					<div class="client-company"><em>Human Resource Manager</em></div>
 			    </div>
-			    <div class="item">
-			    	<div class="client-logo"><img src="att.png" /></div>
+			    <div class="col-sm-4">
+			    	<!--<div class="client-logo"><img src="att.png" /></div>-->
 					<div class="client-message">
 						We are impressed with JustLogins electronic leave system, and even at this early stage, we are beginning to experience costs savings and increased productivity in our human resources function ... 
 					</div>
+					<div class="client-face"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg" width="100" style="margin-top: 30px;"/></div>
 					<div class="client-name">Amelia Chan</div>
 					<div class="client-company"><em>Human Resource Director</em></div>
 			    </div>
-			    <div class="item">
-			    	<div class="client-logo"><img src="pmo.png" /></div>
+			    <div class="col-sm-4">
+			    	<!--<div class="client-logo"><img src="pmo.png" /></div>-->
 					<div class="client-message">
 						Justlogin's eLeave and ePayroll software is very user-friendly, reliable and web-based. They have been our service provider for many years, their service have been prompt, competent and accommodating.
 					</div>
+					<div class="client-face"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/ok/128.jpg" width="100" style="margin-top: 30px;"/></div>
 					<div class="client-name">Kevin Koh</div>
 					<div class="client-company"><em>Chief Operating Officer</em></div>
 			    </div>
-			   </div>
 
 			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left"></span>
-			  </a>
-			  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right"></span>
-			  </a>
+			  
 			</div>
 
 
