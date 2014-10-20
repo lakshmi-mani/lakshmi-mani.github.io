@@ -1,0 +1,24 @@
+/*Example CSS for the two demo scrollers*/
+
+#pscroller1{
+width: 220px;
+height: 200px;
+border: 1px solid #ffffff;
+padding:5px 5px 5px 25px;
+background-color: #ffffff;
+}
+
+
+
+
+.scrolltext{ 
+	font-family:arial;
+	font-size:11px;
+	color:#6f6f6f;
+	text-align:left;
+	padding-left:100px;
+	padding-right:100px;
+	text-decoration:none;
+}
+
+.style4 {color: #999999}
