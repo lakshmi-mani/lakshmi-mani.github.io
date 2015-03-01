@@ -299,11 +299,21 @@ body {
   }
   .case img {
     width: 80%;
-    border: 1px solid #efefef;
   }
   .col-sm-offset-right-3 {
   margin-right: 25%;
   }
   .odd.case {
     margin: 50px auto 100px auto;
+  }
+  .case .imgtag {
+    width: 80%;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  .imgbox {
+    border: 1px solid #eeeeee;
+    padding: 20px;
+    margin: 20px auto;
   }

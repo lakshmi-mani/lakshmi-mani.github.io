@@ -70,52 +70,99 @@
         <div class="col-md-12">
 
           <div class="row">
-            <h2>Background</h2>
-            <p>Over the past two years, my trips to Hong Kong have increased quite a bit. Usually I go down for a weekend to visit Le Boyfriend. I didn’t buy a mobile or 3g plan, considering how short my trips were. So without El Boyfriend around sometimes, I would have no mobile or 3G plan, in a country where I didn’t speak the language: Essentially screwed during emergencies. </p>
-            <p>This kinda coincided with a cycling accident, where all I wanted to do was get to a hospital as soon as possible: but I had to sit around checking my Google Maps for clinics, which never gave me all the results. After narrowing down the closest clinics, I had to manually check the opening hours and telephone number, give them a call and figuring out if they were open. All this happened while bleeding.</p>
+            <h2>A bit of background</h2>
+            <p>As a working adult now, I have been taking more and more short weekend getaways. I usually don't buy a mobile or 3g plan, considering how short my trips were. So I would have no mobile connection or 3G plan, in a country where I didn’t speak the language: Essentially screwed during emergencies. </p>
+
+            <p>I also got into a nasty cycling accident. All I wanted to do was get to a hospital as soon as possible: but I had to sit around checking my Google Maps for clinics, which gave me results for dental clinics, plastic surgeons, TCM etc, not the kind I wanted. 
+
+            After narrowing down the closest clinics, I had to manually check the opening hours, give them a call and figuring out if they were open.</p>
         </div>
 
           <div class="row">
             <h2>The Idea</h2>
-            <p>So we kinda had this idea of working on an app that would help me (and other tourists as well) that would store data about emergency locations within your phone, so you never had to worry about an internet connection. </p>
-            <p>Also, it would show you the nearest locations based on where you are, so essentially, you can open an app, and boom you know where to go in cases of emergency. </p>
+            <p>I couldn't really find out any apps that served during emergency situations. So I decided to make one that would help tourists during emergencies. </p>
+            <p>I wanted an app that would show you the nearest emergency services based on your location. Essentially, you could open the app, and boom, you would know where to go in cases of emergency. </p>
+            <p>I targetted this app primarly towards tourists, who might not be familiar with a city's emergency servies. A quick survey of 50 respondents revealed that 85% of them do not do any research on emergency services (police stations, hospitals, embassies) before they travel.</p>
+            <p>The survey also revealed that 70% of tourists did not purchase a mobile data plan before they travelled. This meant that all emergency data had to be accessible offline. </p>
+
         </div>
 
           <div class="row">
             <h2>The Design Process</h2>
-            <p>The first part was getting the data about emergency locations. Luckily for us, the HK government had recently began an OpenData scheme to encourage more applications to be developed. So all we have to do was generate the list of locations, and just store that within the app itself. Voila!</p>
-            <p>This was an app we were hoping people would never have to use, only in cases of emergency. And we wanted all information to be available instantly. So there should not be a need to download information. We also wanted to reduce users decision making as much as we possible could.</p>
-            <p>So the initial idea for icons, that people would click, which would give results got scraped. That was an additional layer to the decision process that could be skipped.</p>
-            <img src="sketch.jpg" />
-        </div>
+            <p>The first part was getting the data about emergency locations. Luckily, the HK government had recently began an OpenData scheme, so information on emergency services was easily available.</p>
+            <p>Another great advantage of this data was that it was regularly updated by the HK, so all information would be current. We devised a system where the app would download new data everytime there was a change, and store all this info offline. </p>
+            <hr>
+            <p>Next, I picked the types of emergency service information to be displayed. Police and medical services were the most obvious ones. As we were catering to tourists, consulate information also became a category.
+            <p>I drew a couple of quick pencil sketches on how we can display this data to our users.</p>
+            <div class="col-sm-12 imgbox"><img src="initialsketch.jpg" />
+              <p class="imgtag">7 initial sketches on displaying the data. Option 6 & 7 were rejected as they prioritized location, without providing any other categorization. But the ability to select categories between vastly different emergency services was important.</p>
+            </div>            
+          </div>
+
 
           <div class="row">
-            <p>Next we needed some way to showcase different options that people could choose within each category. So if someone needed a hospital, they could choose between the first, second et etc options. Initially we came up with the idea of using arrows to signal the ability to navigate between different options. But soon we scraped that as it occupied screen space within each card, and served as a distraction. </p>
-            <div class="col-sm-4"><img src="arrows1.jpg" /></div>
-            <div class="col-sm-4"><img src="arrows2.jpg" /></div>
-            <div class="col-sm-4"><img src="arrows3.jpg" /></div>
-        </div>
+            <p>Option 2 provided a more "top-down" view of the information, narrowing from category, to the location list, and finally the details of each location. This natural progression and overview it provided made the app easier to understand.</p>
+            <p>A more detailed drawing of the Option 2 revealed a problem with it: The funnel used to provide information bit by bit to users meant that I had to present more screens to the user. Each screen presents decision making, as well as uncertainty about what the next screen was. My goal for this app was to reduce decision making to as little as possible, so I wanted to push this further. </p>
+            <div class="col-sm-12 imgbox"><img src="detailedsketch.jpg" />
+              <p class="imgtag">The process that the user has to take before reaching the final screen. Users had to make it through 3 screens before any information was given to them.</p>
+            </div>       
+
+          </div>
+
 
           <div class="row">
-            <p>[USER CONFUSION GOES HERE] So we then thought of using cards that were peeking out on both sides to signal scrolling. This was a intuitive way of suggesting the ability to view multiple locations within each category.</p>
-           <div class="col-sm-6"><img src="cards1.jpg" /></div>
-           <div class="col-sm-6"><img src="cards2.png" /></div>
-        </div>
+            <p>Option 5 in this case presented a good balance between categorizing information and making information easily accessible. The headers helped to seperate categories and providing summarized information on the first screen itself made decision making a lot easier. </p>
+            <div class="col-sm-12 imgbox">
+              <div class="col-sm-6"><img src="arrows2.jpg" /></div>
+              <div class="col-sm-6"><img src="arrows3.jpg" /></div>
+              <p class="imgtag">Wireframe and colored version of the idea. The colored headers help to categorize the information groups, and the summary made information more easily accessible.</p>
+            </div>       
 
-          <div class="row">
-            <p>In our effort to completely rid of all decision making, we tried to provide all information about each place in one shot. So each location card would contain all information so everything was available without any button presses. However, what happened was, there was an overwhelming amount information presented to the user. Users were at an early stage of decision making (narrowing down to their top 1 or 2 choices). Presenting them with information that they did not need at this stage. They only needed the nitty gritty details once their decisions had been made, ie the ability to drill down for more information of maybe their top two choices.</p>
-            <div class="col-sm-offset-3 col-sm-6 col-sm-offset-right-3"><img src="fulldisplay.jpg" /></div>
-        </div>
-
-          <div class="row">
-            <p>So what we did was, once you clicked on each card, it would provide you more detailed information about each location. So this would be key info like addresses, opening hours, a directions option that led you to google maps, and finally a translation option. </p>
-            <div class="col-sm-offset-3 col-sm-6 col-sm-offset-right-3"><img src="opened.png" /></div>
           </div>
 
           <div class="row">
-            <p>We got this idea from a recent trip to thailand. We took a picture of the Thai signage for Toilet. So each time we needed to say where we wanted to go, we would just whip out that picture, rather than trying to mime the urgent need to pee. That picture essentially eliminated any language barrier we had. And we wanted to bring that to the app as well. </p>
-            <p>So in a non-english speaking country, it would be hard to get your directions across. And the last thing you would want would be to stall, and wait around or head to the wrong place. So we wanted to bring that essence of avoiding the language barrier. So when getting a taxi, or asking people, all the location details would be shown in Chinese. This makes life simpler?</p>
-            <div class="col-sm-offset-1 col-sm-10"><img src="translation.png" /></div>
+            <p>This design presented a problem. Firstly there was no indication from the design that you were able to click on each section and pull out more detailed information about each place. </p>
+            <p>So this was changed into a more card-like design, which indicates without instruction that there will be more information available upon pressing the card. </p>
+            <div class="col-sm-12 imgbox">
+              <div class="col-sm-8 col-sm-offset-2 col-sm-offset-right-3 "><img src="cards1.jpg" /></div>
+              <p class="imgtag">Cards made it obvious that the each card, when clicked will pull up more information. But users tended to scroll up and down to find more information.</p>
+            </div>  
+          </div>
+          <div class="row">
+            <p>The card design, when tested showed another issue. When people viewed the app, because of the card design, the tended to scroll up and down. There was no indication on the design that they needed to swipe left/right to get more information about each screen. </p>
+            <p>So we then thought of using cards that were peeking out on both sides to signal scrolling. This was a intuitive way of suggesting the ability to view multiple locations within each category.</p>
+            <div class="col-sm-12 imgbox">
+              <div class="col-sm-8 col-sm-offset-2 col-sm-offset-right-3 "><img src="cards2.png" /></div>
+              <p class="imgtag">The final design, with cards peeking out from left and right to suggest sideways scrolling.</p>
+            </div>  
+
+          </div>          
+
+
+          <div class="row">
+            <p>Next I had to decide how I could display detailed information, such as opening hours and phone numers. I tried to display all information about each place in one shot. So as the app opened, you would have the fully detailed information. So each location card would contain all information so everything was available without any button presses. </p>
+
+            <p>However, what happened was, there was an overwhelming amount information presented to the user. Users were at an early stage of decision making (narrowing down to their top 1 or 2 choices). Presenting them with information that they did not need at this stage. They only needed the nitty gritty details once their decisions had been made, ie the ability to drill down for more information of maybe their top two choices.</p>
+            <div class="col-sm-12 imgbox">
+              <div class="col-sm-8 col-sm-offset-2 col-sm-offset-right-3 "><img src="fulldisplay.jpg" /></div>
+              <p class="imgtag">Providing too much information in an effort to reduce decision making actually made the app more confusing. A good balance between presenting everything vs decision making had to be struck.</p>
+            </div>  
+        </div>
+
+          <div class="row">
+            <p>So instead, I stuck to my earlier design. So, once you clicked on each card, it would provide you more detailed information about each location. This would be key information like full address, opening hours, a directions option that led you to google maps, and finally a translation option. </p>
+            <div class="col-sm-12 imgbox">
+              <div class="col-sm-8 col-sm-offset-2 col-sm-offset-right-3 "><img src="opened.png" /></div>
+              <p class="imgtag">Detailed view of each location</p>
+            </div>  
+          </div>
+
+          <div class="row">
+            <p>I had got this idea from a recent trip to thailand. As the app will be primarily for tourists, who will not speak the local language, showing location details in mandarin will aid in taxis, or asking for directions.
+            <div class="col-sm-12 imgbox">
+              <div class="col-sm-12"><img src="translation.png" /></div>
+              <p class="imgtag">Translations which were useful in crossing the language barrier!</p>
+            </div> 
           </div>
 
 
