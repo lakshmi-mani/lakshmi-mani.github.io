@@ -314,7 +314,9 @@ body {
     margin-top: 10px;
   }
   .case img {
-    width: 80%;
+    width: auto;
+    max-height: 600px;
+    max-width: 80%;
   }
   .col-sm-offset-right-3 {
   margin-right: 25%;
