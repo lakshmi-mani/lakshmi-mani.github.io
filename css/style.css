@@ -67,7 +67,7 @@ body {
       font-weight: 300;
       color: #FFF;
       text-align: center;
-      word-spacing: 10px;
+      word-spacing: 1px;
     }
     .btn-primary {
       color: #fff;
@@ -353,4 +353,12 @@ body {
     text-align: left;
     margin: 15px auto;
   }
-
+.case li {
+  text-align: left;
+    padding: 10px;
+    text-align: left;
+    color: #3e414e;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+}
