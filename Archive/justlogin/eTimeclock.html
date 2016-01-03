@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>eTimeclock</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Roboto+Condensed:400,300,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Open+Sans+Condensed:300|Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Droid+Sans|Lato|PT+Sans|PT+Sans+Narrow|Yanone+Kaffeesatz|Open+Sans|Roboto|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+	<style>
+
+	body {
+		font-family: 'Lato', sans serif;
+		font-weight: 400;
+		font-size: 16px;
+	}
+	h1, h2 {
+		font-family: 'Roboto Condensed', sans serif;
+	}
+
+	/* ---- NAVBAR --- */
+	.navbar {
+		min-height: 64px;
+	}
+	.navbar .container {
+		width: 95%;
+	}
+	.navbar-default {
+		background-color: #FFFFFF;
+		border-top: 3px solid #be311a;
+	}
+	.navbar-brand {
+		padding: 15px;
+	}
+	.navbar-nav > li > a {
+		line-height: 37px;
+	}
+	.navbar-default .navbar-nav > li > a {
+		color: #444;
+	}
+	.navbar-right li {
+		transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+	}
+	.navbar-right li:hover {
+		background-color: #be311a;
+	}
+	.navbar-right li:hover .navbar-right li:hover {
+		color: #FFF;
+	}
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+		color: #FFF;
+	}
+	.sign-in {
+		width: 91px;
+		height: 45px;
+		background-color: #be311a;
+		color: #fff;
+		margin-top: 12px;
+		display: inherit;
+		border: none;
+		border-radius: 11px;
+		margin-left: 15px;
+	}
+	.sign-in:hover {
+		background-color: #AF3535;
+	}
+	.sign-in a {
+		text-decoration: none;
+		color: #FFF;
+	}
+	@media (min-width: 768px) and (max-width: 992px) {
+		.jumbotron h1 {
+			font-size: 50px;
+		}
+		.jumbotron .col-sm-6.title {
+			position: relative;
+		}
+		.jumbotron {
+			height: 400px;
+			padding-top: 60px;
+			padding-left: 40px;
+		}
+		ul.navbar-nav > li:nth-child(4) {
+			display: none;
+		}
+		.nav > li > a {
+			padding: 10px 12px;
+			}
+	}
+
+	/* ---- JUMBOTRON --- */
+	.jumbotron {
+		margin-top: 64px;
+		margin-bottom: 0px;
+		height: 552px;
+		background-color: #FFF;
+      	background-image: url(eTimeclock-Juhenni.png), url(eTimeclock-Header.jpg);
+      	background-repeat: no-repeat;
+      	background-position: 100% 100%; 
+		text-align: left;
+		color: #333;
+		padding: 150px 155px 0px 115px;
+	}
+	.jumbotron .text {
+		margin-bottom: 40px;
+	}
+	.jumbotron h1 {
+		color: #FFF;
+		text-align: left;
+		text-shadow: 1px 1px 6px #555;
+	}
+	.jumbotron p {
+		color: #FFF;
+		font-weight: normal;
+		font-size: 18px;
+		text-shadow: 1px 1px 6px #555;
+	}
+	.jumbotron-image {
+		max-width: 650px;
+		margin-top: 18px;
+		margin: 0 auto;
+	}
+	.jumbotron-image img {
+		width: 100%;
+		min-width: 500px;
+	}
+	.jumbotron .title {
+		padding-bottom: 30px;
+		background-color: rgba(0,0,0,0.33);		
+	}
+	.jumbotron .col-sm-7 {
+	}
+	@media (min-width: 992px) {
+		.jumbotron .col-sm-6.title {
+			padding-top: 7%;
+		}
+
+	}
+	
+	@media (min-width: 768px) and (max-width: 992px) {
+		.jumbotron h1 {
+			font-size: 45px;
+		}
+		.jumbotron .col-sm-6.title {
+			position: relative;
+		}
+		.jumbotron {
+			height: 485px;
+			padding-left: 40px;
+		}
+		.jumbotron p {
+		font-size: 16px;
+		}
+	}
+	@media (min-width: 768px) {
+		.jumbotron .col-sm-6 {
+			height: 100%;
+		}
+		.jumbotron h1 {
+			font-size: 45px;
+		}
+	}
+	@media (max-width: 767px) {
+		.jumbotron {
+			padding: 10px 30px 0px 30px;
+			height: 515px;
+			background-position: 100% 10%; 
+
+		}
+		.jumbotron-image img {
+			max-width: 500px;
+		}	
+		.jumbotron .col-sm-6 {
+			height: 48%;
+		}
+		.jumbotron h1 {
+			text-align: center;
+		}
+		.sign-up {
+		margin: 0 auto;
+		display: block;
+		}
+	}
+	.sign-up {
+		background-color: #06c;
+		padding: 15px;
+		border: none;
+		border-radius: 10px;
+		color: #FFF;
+		display: block;
+	}
+
+	/* ---- FEATURED PRODUCTS --- */
+	.featured-products {
+		border-top: 1px solid #ececec;
+		border-bottom: 1px solid #ececec;;
+	}
+	.featured-products .container {
+		width: 85%;
+	}
+	.featured-products .product {
+		background-color: #FFF;
+		float: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 12.5%;
+		color: #4d4d4d;
+		text-align: center;
+		transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		-webkit-transition: all .25s ease-in-out;
+		border-right: 1px solid #FFF;
+		font-size: 15px;
+		border-right: 1px solid #ececec;
+	}
+	@media (min-width: 768px) and (max-width: 992px) {
+		.featured-products .product {
+			font-size: 14px;
+		}
+	}
+	.featured-products .product:nth-child(1) {
+		border-left: 1px solid #ececec;
+	}
+
+	.featured-products .product:hover {
+		background-color: #FAF7F7;
+		color: #4d4d4d;
+	}	
+
+	.product-icon img {
+		width: 45px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		/*filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+		/*filter: gray; /* IE6-9 */
+		/*-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	}
+
+	/*.product:hover .product-icon img {
+	  filter: none;
+	  -webkit-filter: grayscale(0%);
+	} */
+
+	.product-icon {
+		width: 100%;
+		text-align: center;
+	}
+	@media (max-width: 768px) {
+		.featured-products {
+			display: none;
+		}
+	}
+	/* ---- MAIN FEATURE --- */
+	.main-feature {
+		padding: 30px;
+		background: url('section-bg.png');
+	}
+	.main-feature .image img {
+		width: 100%;
+	}
+	.point img {
+		width: 32px;
+		margin: 5px;
+	}
+	.point {
+		margin: 10px;
+	}
+	.main-feature .content {
+		margin-left: 30px;
+	}
+	.main-feature .container {
+		border-bottom: 1px solid #DADADA;
+		padding-bottom: 40px;
+	}
+	@media (max-width: 480px) and (min-width: 320px) {
+		.main-feature {
+			padding: 0px;
+		}
+		.main-feature .content {
+		margin-left: 0px;
+		}
+		.navbar-brand {
+		padding: 10px;
+		}
+	}
+
+	/* ---- FEATURE LIST--- */
+	.feature-list {
+		padding-bottom: 60px;
+	}
+	.list-one {
+		background-color: #ececec;
+		background: url('section-bg.png');
+	}
+	.list-one .container {
+		border-bottom: 1px solid #DADADA;
+		padding-bottom: 40px;
+	}
+	.list-two {
+		background-color: #FFF;
+		background: url('section-bg.png');
+		
+	}
+	.feature-list .container {
+		width: 95%;
+		max-width: 1200px;
+	}
+	.feature-list h1 {
+		text-align: center;
+	}
+	.feature-wrapper {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		padding: 15px;
+	}
+	.feature-icon img {
+		width: 52px;
+		margin: 5px;
+	}
+	.feature-title {
+		font-size: 24px;
+	}
+	@media (max-width: 768px) {
+		.feature-wrapper {
+			border-bottom: 1px solid #a2a2a2;
+			text-align: center;
+		}
+		.feature-icon {
+			width: 100%;
+			text-align: center;
+		}
+		.feature-icon img {
+			width: 92px;
+		}
+		.feature-list {
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+	}
+	@media (max-width: 992px) {
+		.feature-icon img {
+			width: 75px;
+			margin: 5px;
+		}
+	}
+	/* ---- CASE STUDY--- */
+		.casestudy {
+			background: url('casestudy.JPG');
+			padding: 50px;
+			color: #FFF;
+			padding-top: 100px;
+			padding-bottom: 80px;
+			background-size: cover;
+		}
+		.casestudy h1 {
+			text-align: center;
+			text-shadow: 0 1px 59px rgba(0,0,0,0.5);
+			font-size: 42px;
+		}
+		.casestudy h2 {
+			text-align: center;
+			text-shadow: 0 2px 2px rgba(0,0,0,0.6);
+			margin-bottom: 40px;
+		}
+		.casestudy img {
+			width: 90px;
+			margin-top: 57px;
+		}
+		.casestudy .play-button {
+			width: 100%;
+			text-align: center;
+		}
+
+	/* ---- TESTIMONIALS --- */
+		.testimonials {
+			background-color: #ececec;
+			background: url('section-bg.png');
+			padding-bottom: 60px;
+			text-align: center;
+		}
+		.testimonials .col-sm-4 {
+			padding: 0px 30px;
+		}
+		.client-logo img {
+			max-width: 300px;
+			margin: 40px;
+		}
+		.client-logo {
+			width: 100%;
+			text-align: center;
+		}
+		.client-message {
+			max-width: 800px;
+			text-align: center;
+			margin: 0 auto;
+		}
+		.client-name {
+			font-weight: 900;
+			margin-top: 20px;
+			font-size: 18px;
+		}
+		.client-company {
+			font-weight: 700;
+			font-size: 18px;
+		}
+		/*.client-message:before {
+			content: '"';
+			font-size: 50px;
+			font-family: "Times New Roman", serif;
+		}
+		.client-message:after {
+			content: '"';
+			font-size: 40px;
+			font-family: "Times New Roman", serif;
+			margin-top: -40px; */
+		}
+		.client-face .img-circle {
+			max-width: 150px;
+			background-color: red;
+		}
+		.carousel-inner > .item {
+			min-height: 450px;
+		}
+		.carousel-inner > .item {
+			min-height: 450px;
+		}
+		.carousel-control.left {
+			background: none;
+		}
+		.carousel-control.right {
+			background: none;
+		}
+		@media (max-width: 992px) {
+			.client-message {
+				max-width: 600px;
+			}
+
+		}
+		@media (max-width: 480px) {
+			.client-message {
+				max-width: 300px;
+			}
+
+		}
+	/* ---- CONTACT --- */
+		.contact {
+			color: #FFF;
+		}
+		.contact .container {
+			width: 75%;
+			max-width: 1200px;
+		}
+		.contact-info {
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			background-color: #565d67;
+			color: #FFF;
+		}
+		.contact-details {
+			text-align: center;
+			padding-bottom: 16px;
+			background-color: #313842;
+			color: #FFF;
+		}
+		.contact-triangle img {
+			width: 65px;
+			margin-bottom: 7px;
+		}
+		@media (max-width: 992px) { 
+			.contact-triangle img {
+				display: none;
+			}
+
+		}
+		.contact-row-one {
+			width: 100%;
+			background-color: #565d67;
+		}
+		.contact-row-two {
+			width: 100%;
+			background-color: #313842;
+		}
+		.contact-icon img {
+			width: 32px;
+			margin-bottom: 10px;
+		}
+
+	/* ---- FOOTER --- */
+		.footer {
+			background-color: #1a1e27;
+			padding: 30px;
+			background: url('noisy_net_@2X.png');
+		}
+		.footer h2 {
+			text-align: left;
+			color: #a4aeba;
+			font-size: 24px;
+		}
+		.footer p {
+			text-align: left;
+			color: #969494;
+			font-size: 15px;
+		}
+		@media (max-width: 992px) {
+			.footer p {
+				text-align: center;
+			}
+			.footer h2 {
+				text-align: center;
+			}
+		}
+		.footer .container {
+			width: 85%;
+			max-width: 1200px;
+		}
+
+	</style>
+
+
+</head>
+
+
+<body>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href=""><img src="logo.png" /></a>
+        </div>
+
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="">Products</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+
+          <div class="navbar-right">
+        	<ul class="nav">
+        		<button class="sign-in"><a href="">Sign In</a></button>
+        	</ul>
+        </div>
+
+        </div>
+        
+      </div>
+    </div>
+
+<!--<div class="container">-->
+	<div class="jumbotron">
+			<div class="col-sm-7 col-xs-12 title">
+				<h1>Simple and powerful time attendance </h1>
+				<p>No more complex clocking into work. No more worrying about buddy </p>
+				<button class="sign-up">Try now for free for 14 days</button>
+			</div>
+
+	</div>
+
+	<!--<div class="featured-products">
+		<div class="container">
+			<div class="product">
+				<div class="product-icon"><img src="eStaff-icon.png" /></div>
+				<div class="product-name">eStaff</div>
+			</div>
+			<div class="product">
+				<div class="product-icon"><img src="eResource-icon.png" /></div>
+				<div class="product-name">eResource</div>
+			</div>		
+			<div class="product highlight">
+				<div class="product-icon"><img src="eTimeclock-icon.png" /></div>
+				<div class="product-name">eTimeclock</div>
+			</div>		
+			<div class="product highlight">
+				<div class="product-icon"><img src="ePayroll-icon.png" /></div>
+				<div class="product-name">ePayroll</div>
+			</div>
+			<div class="product highlight">
+				<div class="product-icon"><img src="eLeave-icon.png" /></div>
+				<div class="product-name">eLeave</div>
+			</div>
+			<div class="product highlight">
+				<div class="product-icon"><img src="eForm-icon.png" /></div>
+				<div class="product-name">eForm</div>
+			</div>		
+			<div class="product">
+				<div class="product-icon"><img src="e360-icon.png" /></div>
+				<div class="product-name">e360</div>
+			</div>		
+			<div class="product">
+				<div class="product-icon"><img src="eSurvey-icon.png" /></div>
+				<div class="product-name">eSurvey</div>
+			</div>
+		</div>
+	</div>-->
+
+	<div class="main-feature" style="padding-top: 80px;">
+		<div class="container">
+
+			<div class="col-md-6">
+				<div class="image">
+					<img src="eTimeclock-devices.png" />
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="content">
+					<h1>Clock into work, in one simple click!</h1>
+					<p> No more complex clocking into work. No more worrying about buddy punching. No more worrying about keeping an eye on your employees.</p>
+					<div class="bullet points">
+						<div class="point"><img src="bullet-point.png" />Eradicate buddy punching</div>
+						<div class="point"><img src="bullet-point.png" />Hassle free time attendance </div>
+						<div class="point"><img src="bullet-point.png" />Get a handle on your workforce</div>
+					</div>
+					<button class="sign-up">Try now for FREE!</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="main-feature">
+		<div class="container">
+
+			<div class="col-md-6">
+				<div class="content">
+					<h1>No more buddy punching</h1>
+					<p> During clock in or out, the time, the location and the photo of staff member will be captured using the iPad or phone camera.
+				With eTimeclock, there is also no need for manual data extraction, as all of the data is stored in the cloud, and can be captured in real time.</p>
+
+					<button class="sign-up">Try now for FREE!</button>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="image">
+					<img src="eTimeclock-photo location.gif" />
+				</div>
+			</div>
+
+			
+
+		</div>
+	</div>
+
+	<div class="feature-list list-one">
+		<div class="container">
+			<div class="col-md-12">
+				<h1>Other features you'll love</h1><br>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="1a.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Photo captures</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="1b.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">GPS Location capture</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hat vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="1c.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Lightning fast calculations</div>
+						<div class="feature-description">Molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="1d.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Flexible</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--<div class="casestudy">
+		<div class="container">
+			<div class="col-md-8 col-md-offset-2">
+				<h1> Find out how Air France manages their workforce better with Justlogin </h1>
+				
+				<div class="play-button">
+					<img src="Play.png" />
+				</div>
+				<h2> Click here to watch </h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="feature-list list-two">
+		<div class="container">
+			<h1>Hassle free HR</h1>
+			<div class="col-md-6 col-sm-12">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="2a.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Integration</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="2b.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Reports</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat ntum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="2c.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Pay per use</div>
+						<div class="feature-description">Duis autem vel eum iriure dolor in hendrerit iacilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<div class="feature-wrapper">
+					<div class="col-sm-2">
+						<div class="feature-icon"><img src="2d.png" /></div>
+					</div>
+					<div class="col-sm-10">
+						<div class="feature-title">Security</div>
+						<div class="feature-description">dolor in hendrerit in vulputate velit esse molestie consequat, vel dignissim qui blandit praesent luptatum zzril</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	
+
+	<div class="testimonials">
+		<div class="container">
+			<h1>What our customers have to say</h1><br><br>
+
+				<div class="col-sm-4">
+					<!--<div class="client-logo"><img src="ikea.jpg" /></div>-->
+					<div class="client-message">
+						Using JustLogin obviously means greater convenience for our staff leading to their enhanced productivity. There are also greater cost savings, since manpower is used more efficiently now - there is no.
+					</div>
+					<div class="client-face"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/uxceo/128.jpg" width="100" style="margin-top: 30px;"/></div>
+					<div class="client-name">Eileen Koh</div>
+					<div class="client-company"><em>Human Resource Manager</em></div>
+			    </div>
+			    <div class="col-sm-4">
+			    	<!--<div class="client-logo"><img src="att.png" /></div>-->
+					<div class="client-message">
+						We are impressed with JustLogins electronic leave system, and even at this early stage, we are beginning to experience costs savings and increased productivity in our human resources function ... 
+					</div>
+					<div class="client-face"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg" width="100" style="margin-top: 30px;"/></div>
+					<div class="client-name">Amelia Chan</div>
+					<div class="client-company"><em>Human Resource Director</em></div>
+			    </div>
+			    <div class="col-sm-4">
+			    	<!--<div class="client-logo"><img src="pmo.png" /></div>-->
+					<div class="client-message">
+						Justlogin's eLeave and ePayroll software is very user-friendly, reliable and web-based. They have been our service provider for many years, their service have been prompt, competent and accommodating.
+					</div>
+					<div class="client-face"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/ok/128.jpg" width="100" style="margin-top: 30px;"/></div>
+					<div class="client-name">Kevin Koh</div>
+					<div class="client-company"><em>Chief Operating Officer</em></div>
+			    </div>
+
+			  <!-- Controls -->
+			  
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="contact">
+		<div class="contact-row-one">
+			<div class="container">
+				<div class="col-md-3 contact-info phone">
+					<div class="contact-icon"><img src="phone.png" /></div>
+					<div class="contact-name">Phone</div>
+				</div>
+				<div class="col-md-3 contact-info email">
+					<div class="contact-icon"><img src="email.png" /></div>
+					<div class="contact-name">Email</div>
+				</div>
+				<div class="col-md-3 contact-info livechat">
+					<div class="contact-icon"><img src="livechat.png" /></div>
+					<div class="contact-name">Livechat</div>
+				</div>
+				<div class="col-md-3 contact-info facebook">
+					<div class="contact-icon"><img src="facebook.png" /></div>
+					<div class="contact-name">Facebook</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact-row-two">
+			<div class="container">
+				<div class="col-md-3 contact-details phone">
+					<div class="contact-triangle"><img src="triangle.png" /></div>
+					<div class="contact-name">+65 6476 5330</div>
+				</div>
+				<div class="col-md-3 contact-details email">
+					<div class="contact-triangle"><img src="triangle.png" /></div>
+					<div class="contact-name">sales@justlogin.com</div>
+				</div>
+				<div class="col-md-3 contact-details livechat">
+					<div class="contact-triangle"><img src="triangle.png" /></div>
+					<div class="contact-name">Click here</div>
+				</div>
+				<div class="col-md-3 contact-details facebook">
+					<div class="contact-triangle"><img src="triangle.png" /></div>
+					<div class="contact-name">Like us</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3">
+				<h2> About Us </h2>
+				<p> Company Overview </p>
+				<p>Partner</p>
+				<p>Privacy Policy</p>
+				<p>Terms of Service</p>
+				<p>Careers</p>
+			</div>
+			<div class="col-md-3">
+				<h2> Products </h2>
+				<p> eLeave</p>
+				<p>ePayroll</p>
+				<p>eTimeclock</p>
+				<p>eForm</p>
+				<p>eStaff</p>
+				<p>eResource</p>
+				<p>eBenefit</p>
+				<p>e360</p>
+				<p>eSurvey	</p>
+			</div>
+			<div class="col-md-3">
+				<h2> Resources </h2>
+				<p> FAQs </p>
+				<p>Sitemap</p>
+				<p>Pricing</p>
+				<p>Video demos</p>
+				<p> Blog</p>
+			</div>
+			<div class="col-md-3">
+				<h2> Newsletter signup </h2>
+				<p>These are social things. Follow us to keep up to date with latest HR policies etc.</p>
+				
+			</div>
+		</div>
+	</div>
+<!--</div>-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>    
+<script src="js/docs.min.js"></script>   
+
+</body>
+
+
+
+
+</html>
