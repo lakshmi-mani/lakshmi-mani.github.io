@@ -195,8 +195,8 @@ footer {
 .social-media-icons {
   border-radius: 50px;
   border: 2px solid #9d9d9d;
-  padding: 12px;
-  width: 50px;
+  padding: 9px;
+  width: 40px;
   display: inline-block;
   transition: 0.3s all;
 }
