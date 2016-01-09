@@ -524,6 +524,7 @@ img.AB-results-verdict {
   position: relative;
   top: 20%;
   border: none;
+  margin-bottom: 20px;
 }
 .demo-frame-wrapper {
   background-image: url('URX-After.png'); 
@@ -534,6 +535,10 @@ img.AB-results-verdict {
 }
 .casestudy-footer {
   background-color: #333;
+}
+.next-casestudy-container {
+  background-color: #F0F3F5;
+  padding: 30px 0px;
 }
 
 
@@ -558,6 +563,7 @@ img.AB-results-verdict {
 .jumbotron-about h1 {
   color: #535353;
 }
+
 @media (min-width: 768px) {
   .navbar-header {
     float: none; 
@@ -594,7 +600,7 @@ img.AB-results-verdict {
     max-width:100%;
     max-height:100%; 
   }
-
+  
   .process-detailed-content .container {
     padding-left: 38px;
     margin-left: 34px;
@@ -644,5 +650,5 @@ img.AB-results-verdict {
   }
   footer .row.container {
     width: 80%;
-}
+  }
 }
