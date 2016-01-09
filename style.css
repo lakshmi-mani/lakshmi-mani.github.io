@@ -623,6 +623,9 @@ img.AB-results-verdict {
     content: url("Process-Usability-Studies.png");
     margin-left: -90px;
   }
+  .demo-frame {
+    display: none;
+  }
   footer .row.container {
     width: 80%;
 }
