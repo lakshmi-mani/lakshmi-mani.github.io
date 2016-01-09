@@ -221,6 +221,12 @@ footer .row.container {
   margin-bottom: 0px;
   background-size: contain;
 }
+.jumbotron-wetravel {
+  background-image: url('wetravel-bg.png');
+  min-height: 480px;
+  margin-bottom: 0px;
+  background-size: contain;
+}
 .project-goals-card {
   position: relative;
   left: 50%;
@@ -565,10 +571,20 @@ img.AB-results-verdict {
   .jumbotron .container {
     max-width: 90%;
   }
+  .split-card-before {
+    min-height: 0px;
+    height: 0px;
+  }
   .project-goals-card {
     min-width: 102%;
     border-radius: 0px;
     bottom: 11%;
+    padding: 1em 0.2em;
+  }
+  .project-goals-card {
+    min-width: 102%;
+    border-radius: 0px;
+    position: relative;
     padding: 1em 0.2em;
   }
   .project-content .container {
