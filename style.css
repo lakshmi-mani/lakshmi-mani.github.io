@@ -206,7 +206,7 @@ footer .row.container {
 .social-media-icons:hover {
   transition: 0.3s all;
   background-color: #222; 
-  border: 1.5px solid #cccccc;
+  border: 2px solid #FFF;
 }
 .next-casestudy {
   margin: 0 auto;
