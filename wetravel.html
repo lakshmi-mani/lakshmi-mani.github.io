@@ -24,6 +24,8 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="./Portfolio_files/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
     <link href="style.css" rel="stylesheet">
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+
 
 
 
@@ -138,7 +140,7 @@
             
               <div class="col-md-12">
                 <p class="results-value">150%</p>
-                <p class="results-description">INCREASE IN UNDERSTANDING PUBLIC/PRIVATE TRIPS</p>
+                <p class="results-description">INCREASE IN TRIP TYPE COMPREHENSION </p>
               </div>
             </div>
           </div>
@@ -149,7 +151,7 @@
         <div class="section process-summary">
           <div class="row">
             <h3>Process</h3>
-            <p>In order to achieve our goals, we went through the following process. We went through usability testing of the carousel unit, then we went into a design studio process where we iterated and prototyped new carousel versions. And finally, we A/B tested 4 different designs.  </p>
+            <p>In order to achieve our goals, we first usability tested the current Wetravel web app. Based on our findings, we went through a design studio process to generate ideas. We then prototyped and rapidly tested and iterated on our designs. And we then went into a final round of validation testing. </p>
           </div>
 
           <div class="row subsection">
@@ -171,193 +173,237 @@
           <div class="container timeline phase-one-timeline">
             <h4 class="process-section-titles">Usability Studies</h4>
             <div class="row">
-              <h5 class="title-quote">How do you usability test an Ad?</h5>
-              <p>When we began, we followed standard usability testing methods in order to test the engagement of the carousel. We recrutied users who read on their mobile phones frequently. We gave them a phone which had an article from Wikia, and we asked them to go through the article, interact with it and narrate their thoughts. </p>
+              <h5 class="title-quote">Persona Creation</h5>
+              <p>Based on our discussion with the clients, we created provisional personas of the 2 types of users of WeTravel, Public Trip Organizers, and Private Trip Organizers. We used these to recruit participants for usability studies.</p>
 
-              <p>However, pretty early on it the process, we realized this was not the best method to test the carousels for these reasons: </p>
-              <ul>
-                <li>Without a clearly defined task, the users commented on anything and everything they saw, such as font sizes in the article, the publication's logo etc. </li>
-                <li>People can’t predict future behavior i.e would they have clicked on this Ad? </li>
-                <li>Users weren't keen on reading a random article they had no interest in</li>
-                <li>We got no insights on the design of the carousel unit</li>
-              </ul>
-              <p>So we decided to dwelve deeper to understand what factors were at play each time a user came across an article with a carousel in it. </p>
-              <hr>
-            </div> 
-
+              <div class="col-md-6">
+                <h4>Public Trip Organizer</h4>
+                <img src="Wetravel-public-persona.png" />
+              </div>
+              <div class="col-md-6">
+                <h4>Public Trip Organizer</h4>
+                <img src="Wetravel-private-persona.png" />
+              </div>
+            </div>
+            <hr>
             <div class="row">
-              <h5 class="title-quote">So then, what factors affect whether a user will click on the carousel?</h5>
-              <table class="table-style">
+              <h5 class="title-quote">Usability Testing</h5>
+              <p>We conducted usability testing of the trip creation and onboarding process on 5 users.</p>
+              <p>We then took down the key pain points faced by the users, and used affinity mapping to group similar pain points of each user. </p>
+              <img src="Wetravel-painpoints.png" />
+
+              <p>We focused our redesign efforts on the 5 pain points that were experienced by 3 or more users. </p>
+            </div>
+            <hr>
+            <div class="row">
+              <h5 class="title-quote">Pain Points</h5>
+                <table class="table-style">
                 <tr>
-                  <th width="1%">Factors</th>
-                  <th width="35%">How does it affect behavior?</th>
-                  <th width="35%">How we controlled for it</th>
+                  <th width="15%">Pain Point</th>
+                  <th width="35%">Problem Faced</th>
+                  <th width="65%">Design Hypothesis</th>
                 </tr>
                 <tr>
-                  <td><img src="futuro_icons_64px_478.png" /><h5>Users</h5></td>
-                  <td><p>How interested are the users in the subject matter of the article? Do they know the artist? Are they a fan?</p></td>
-                  <td><p>Recruited participants who read Huffpo + Maroon 5 fans + iPhone users</p></td>
+                  <td><img src="futuro_icons_64px_2.png" /><h5>Itinerary</h5></td>
+                  <td><p>3/5 users were unable to successfully create a trip itinerary</p></td>
+                  <td><p><ul>
+                    <li>Itinerary creation might be atypical compared to other apps</li>
+                    <li>Itinerary form fields might be confusing. </li>
+                  </ul></p></td>
                 </tr>
                  <tr>
-                  <td><img src="futuro_icons_256px_454.png" /><h5>Environment</h5></td>
-                  <td><p>Where is the user? Are they at home, or on the train? Is it noisy outside or are they wearing headphones? Are they in a rush?</p></td>
-                  <td><p>Left the participants in a comfy room on a couch, with no experimentors present for 5 minutes to check out the article</p></td>
+                  <td><img src="futuro_icons_64px_150.png" /><h5>Trip Creation</h5></td>
+                  <td><p>3/5 users did not know which part they were in, in the trip creation process</p></td>
+                  <td><p><ul>
+                    <li>Left navigation might be harder to understand</li>
+                    <li>Clearer indication of steps completed/left </li>
+                  </ul></p></td>
                 </tr>
                 <tr>
-                  <td><img src="futuro_icons_64px_460.png" /><h5>Article Content</h5></td>
-                  <td><p>How interesting is the content of the article itself? Is it announcing a new song? Is it about the artist’s family history?</p></td>
-                  <td><p>Crafted a special article on a new album release to make the content more interesting</p></td>
+                  <td><img src="futuro_icons_64px_268.png" /><h5>Trip Publishing</h5></td>
+                  <td><p>3/5 users were unsure if they had successfully published the trip, and what publish even meant.</p></td>
+                  <td><p><ul>
+                    <li>Clearer explanation of the implications of 'Publishing'</li>
+                    <li>Better success/completion indicators</li>
+                  </ul></p></td>
                 </tr>
                 <tr>
-                  <td><img src="futuro_icons_64px_161.png" /><h5>Song Relevancy</h5></td>
-                  <td><p>How relevant are the songs in the carousel to the article itself Are the songs mentioned in the article? Or is it a random list?</p></td>
-                  <td><p>Used song names that were mentioned in the article itself.</p></td>
+                  <td><img src="futuro_icons_64px_472.png" /><h5>Private vs Public</h5></td>
+                  <td><p>3/5 users were unable to understand what the difference between a Private and a Public trip is.</p></td>
+                  <td><p><ul>
+                    <li>Clearer explanation of the difference between Private and Public</li>
+                    <li>Easier way to find out if current trip is Private or Public</li>
+                  </ul></p></td>
                 </tr>
-                <tr>
-                  <td><img src="futuro_icons_64px_522.png" /><h5>Design</h5></td>
-                  <td><p>How is the design of the carousel? What do people think will happen when they click it? Is there a clear CTA?</p></td>
-                  <td><p>In order to only be testing for the design of the carousel, we needed to control for the 4 factors that had a high impact in the click through rate. </p></td>
-                </tr>
+               
               </table>
+            </div> 
 
-            </div>
           </div>
 
           <div class="container timeline phase-two-timeline">
             <h4 class="process-section-titles">Design Studio</h4>
-            
-            <div class="row">
-              <h5 class="title-quote">What is our design hypothesis?</h5>
-              <p>We felt that a carousel unit that resembles a native, embedded music player on the page will </p>
-              <ul>
-                <li>Look less like an Ad</li>
-                <li>AND hence users are more likely to engage with it</li>
-              </ul>
-              <p>So we drew inspiration from the designs from native music players that are currently out there and started a design studio process. During the course of 3 hours, we came up with ideas, sketched them, presented to the team and finally voted on the best ideas. </p>
-            </div>
 
+              <p>Based on the hypotheses we developed during usability testing, we went into a design studio with the clients to quickly generate and vote on top ideas that could solve the pain points.</p>
+              <img src="Wetravel-design-studio-working.png" />
+            <hr>
             <div class="row">
-              <img src="Design-studio-working.png" />
-              <p>Based on the top voted ideas, we created high fidelity mock ups of the ideas that we wanted to test. </p>              
-              <img src="URX-Hifi.png" />
-              <p>By combining multiple ideas, and designing a new carousel unit, we would have no way to interpret the final results. We won't have insights on exactly what ideas led to good or bad results, but merely a final product. </p>  
-              <p>So in order to gain good insights, we decided to test each idea individually, and iterate on carousel version by version, rather than a overhaul.</p>  
-              <hr>
-            </div>
-
-            <div class="row">
-              <h5 class="title-quote">Experiment Loop Model</h5>
-              <p>We picked 4 top ideas, namely 1) Play Button, 2) "Listen On" Header CTA, 3) Progress Bar, 4) Single Song Choice. We developed hypotheses on what metric we would notice an improvement in for each idea.  </p>
+              <h5 class="title-quote">Low Fidelity Wireframes</h5>
               
-            <table class="table-style URX-results">
-                <tr>
-                  <th width="15%">Variables</th>
-                  <th width="55%">Hypothesis</th>
-                  <th width="25%">Expected Behavior</th>
-                </tr>
-                <tr>
-                  <td><img src="Variable-Play button2.png" /><h5>Play Button</h5></td>
-                  <td><p>Adding a play button makes for a clearer CTA. Engaged to clicked on first pass.</p></td>
-                  <td><!--<div class="bar">
-                    <div class="level60 sixty">
-                      60%
-                    </div></div><img class="expected-results" src="AB-Results-60%.png" />--><h5>3/5 users will click on the carousel to listen to music on first pass</h5></td>
-                </tr>
-                <tr>
-                  <td><img src="Variable-Listen on2.png" /><h5>Listen On CTA</h5></td>
-                  <td><p>Adding “Listen On” text to the top bar will make the player seem more native</p></td>
-                  <td><!--<div class="bar">
-                    <div class="level60 sixty">
-                      60%
-                    </div></div><img class="expected-results" src="AB-Results-60%.png" />--><h5>3/5 users will think that the carousel is a native music player</h5></td>
-                </tr>
-                <tr>
-                  <td><img src="Variable-progress bar1.png" /><h5>Progress Bar</h5></td>
-                  <td><p>Adding a progress bar will make the carousel look like a native player</p></td>
-                  <td><!--<div class="bar">
-                    <div class="level80 eighty">
-                      80%
-                    </div></div><img class="expected-results" src="AB-Results-80%.png" />--><h5>4/5 users will click on the carousel to listen to music on first pass</h5></td>
-                </tr>
-                <tr>
-                  <td><img src="Variable-single choice1.png" /><h5>Single Song</h5></td>
-                  <td><p>Using a single song card reduces complexity of choice. Engaged to clicked on first pass.</p></td>
-                  <td><!--<div class="bar">
-                    <div class="level80 eighty">
-                      80%
-                    </div></div><img class="expected-results" src="AB-Results-80%.png" />--><h5>4/5 users will think that the carousel is a native music player</h5></td>
-                </tr>
-              </table>
-              <p>We then compared the actual results to the expected results, and went through with the change if the actual results were better. If the actual results do no meet the hypothesis, then we drop that idea for the next round of testing.  </p>
-              <hr>
+              <p>We decided to mock up the top 2 voted itinerary views and test them out using a rapid iteration and testing process. </p>  
+              <img src="Wetravel-2-itineraries.png" />
+              
             </div>
+            <div class="row">
+              
+              
+              <p>Since users were confused about the Public vs Private trips, we also wireframed some ideas of making that clearer during the onboarding/sign up process. </p>  
+               <p>We also felt that a top nav would be be easier for users to navigate. So we mocked up our designs on both a left nav (existing design) and a top nav (our proposed design).</p> 
+              <div class="col-md-6"><img src="Wetravel-private-public.jpg" /></div>
+              <div class="col-md-6"><img src="Wetravel-nav.jpg" /></div>
+              
+            </div>
+            <hr>
+
+            <div class="row">
+              <h5 class="title-quote">UI Flows</h5>
+              
+              <p>Before jumping right into the high fidelity mockups, we also worked on the UI flow of the entire trip creation and onboarding process.  </p>  
+
+              <div class="col-md-12"><img src="Wetravel-UI-flow.jpeg" /></div>
+            </div>
+            <hr>
+            
+
+          
 
           </div>
 
           
 
           <div class="container timeline phase-four-timeline">
-            <h4 class="process-section-titles">Rapid Iteration</h4>
+            <h4 class="process-section-titles">Rapid Design Iteration and Testing</h4>
+            <p>We then developed high fidelity mockups which we prototyped using InVision. We tested these prototypes on a new set of users every day. And based on the results and their feedback, we modified the designs, and tested them the next day. We did this method of rapid iteration for one week.</p>
             
             <div class="row">
-              <p>We gave our Maroon 5 fan participants the article we had crafted about the band's new album. It contained the carousel unit in the middle, along with other media content, such as videos, instagram images etc. We told them to check it out for 5 minutes, and left the room. </p>
-              <p>The experimenter came back into the room again to then ask the participants questions on their experience and their interaction with the carousel. </p>
+              <h5 class="title-quote">Navigation</h5>
+              <p>We tested out both the top and left navigation, and users definitely strongly preferred and understood the top navigation much better. </p>
 
-              <img src="Wetravel_Itinerary_progress2.png" />
-
-              <p>We tested 5 participants each for each version that we A/B tested. </p>
-              
+              <div class="col-md-6">
+                <h4>Top Nav</h4>
+                <img src="Wetravel-topnav.png" />
+              </div>
+              <div class="col-md-6">
+                <h4>Left Nav</h4>
+                <img src="Wetravel-leftnav.png" />
+              </div>
             </div>
+            <div class="row">
+              
+              <p>For all future iterations, we then proceeded to use the top nav.  </p>
+            </div>
+            <hr>
+            
+                
 
             <div class="row">
-              <h5 class="title-quote">Control Testing</h5>
-              <div class="col-sm-6 outcomes-img">
-                <img src="Version Control.png" />
+              <h5 class="title-quote">Itinerary View</h5>
+              <p>We tested out both the Cards and the Calendar Views and through testing, we found that users preferred the Calendar View. It was a familiar way in which they were used to plan their days, and thus they were able to navigate it better. </p>
+
+              <div class="col-md-6">
+                <h4>Calendar Itinerary</h4>
+                <img src="Wetravel-calendar-itinerary.png" />
               </div>
-              <div class="col-sm-6 AB-results">
-                <h5 class="AB-results-titles">Clicked on first pass</h5>
-                <img src="AB-Results-20%.png" />
-                <h5 class="AB-results-titles">Thought it was a native player</h5>
-                <img src="AB-Results-40%.png" />
-                <h5 class="AB-results-titles">Didn't think it was an Ad</h5>
-                <img src="AB-Results-60%.png" />
+              <div class="col-md-6">
+                <h4>Card Itinerary</h4>
+                <img src="Wetravel-card-itinerary.png" />
               </div>
             </div>
-            <p>We tested the current carousel unit from URX to get the baseline results. We based all hypotheses for Versions A-D based on these results. </p>
-            <hr>
+            <div class="row">  
+              <p>During our week of rapid iteration, we incorporated areas in which users felt confused, and took in their suggestions and kept refining our ideas. </p>
+
+              <img src="Wetravel_Itinerary_progress7.png" />
+
+              <p>We added both a 'Detailed Day View' for users who want to do minute level planning as well as a 'Trip Overview' for users who only want to plan their trips more broadly. </p>
+
+              <p>We also added a 'Sample Day Card' for make it even easier for users to understand. </p>
+
+              <div class="col-md-6">
+                <h4>Final Detailed Itinerary</h4>
+                <img src="Wetravel-itinerary-detailed.png" />
+              </div>
+              <div class="col-md-6">
+                <h4>Final Overview Itinerary</h4>
+                <img src="Wetravel-itinerary-overview.png" />
+              </div>
+
+              
+              
+            </div>
+            <br>
 
           
             
           </div>
 
           <div class="container timeline phase-five-timeline">
+            
             <h4 class="process-section-titles">Validation Testing</h4>
+            <p>After a week of rapid design iterations, we had improved on our initial prototype significantly. Now it was time to validate the prototype with 10 trip organizers and users of WeTravel itself. </p>
             
             <div class="row">
-              <p>We gave our Maroon 5 fan participants the article we had crafted about the band's new album. It contained the carousel unit in the middle, along with other media content, such as videos, instagram images etc. We told them to check it out for 5 minutes, and left the room. </p>
-
-              <p>The experimenter came back into the room again to then ask the participants questions on their experience and their interaction with the carousel. </p>
-
-              <p>We tested 5 participants each for each version that we A/B tested. </p>
-              
-            </div>
+              <img src="Wetravel-validation-testing.jpeg" />
+            </div><br>
+        
 
             <div class="row">
-              <h5 class="title-quote">Control Testing</h5>
+              <h5 class="title-quote">Itinerary</h5>
               <div class="col-sm-6 outcomes-img">
-                <img src="Version Control.png" />
+                <img src="Wetravel-itinerary-overview.png" />
               </div>
               <div class="col-sm-6 AB-results">
-                <h5 class="AB-results-titles">Clicked on first pass</h5>
-                <img src="AB-Results-20%.png" />
-                <h5 class="AB-results-titles">Thought it was a native player</h5>
-                <img src="AB-Results-40%.png" />
-                <h5 class="AB-results-titles">Didn't think it was an Ad</h5>
-                <img src="AB-Results-60%.png" />
+                <h5 class="AB-results-titles">Add a day theme</h5>
+                <img src="AB-Results-100.png" />
+                <h5 class="AB-results-titles">Add a event in a day</h5>
+                <img src="AB-Results-100.png" />
+                <h5 class="AB-results-titles">Count total no. of days</h5>
+                <img src="AB-Results-100.png" />
               </div>
             </div>
-            <p>We tested the current carousel unit from URX to get the baseline results. We based all hypotheses for Versions A-D based on these results. </p>
+            <p>The new itinerary was very simple to use for all 10 users. Some of the users said they loved that they can just do a broad overview itinerary and some loved the ability to add individual events! </p>
             <hr>
+
+            <div class="row">
+              <h5 class="title-quote">Publishing</h5>
+              <div class="col-sm-6 outcomes-img">
+                <img src="Wetravel-publishing.png" />
+              </div>
+              <div class="col-sm-6 AB-results">
+                <h5 class="AB-results-titles">Tell if the trip is published</h5>
+                <img src="AB-Results-100.png" />
+                <h5 class="AB-results-titles">Unpublish a trip</h5>
+                <img src="AB-Results-100.png" />
+                <h5 class="AB-results-titles">Save as Draft</h5>
+                <img src="AB-Results-100.png" />
+              </div>
+            </div>
+            <p>Users were also easily able to tell the status of their trip, and save a draft and switch from published to unpublish. </p>
+            <hr>
+
+            <div class="row">
+              <h5 class="title-quote">Public vs Private</h5>
+              <div class="col-sm-6 outcomes-img">
+                <img src="Wetravel-public-private.png" />
+              </div>
+              <div class="col-sm-6 AB-results">
+                <h5 class="AB-results-titles">Understand 'Public' vs 'Private' trip difference</h5>
+                <img src="AB-Results-100.png" />
+                <h5 class="AB-results-titles">Switch trip from Public to Private</h5>
+                <img src="AB-Results-100.png" />
+              </div>
+            </div>
+            <p>Users were also easily able to tell the status of their trip, and save a draft and switch from published to unpublish. </p>
+            
 
 
            
@@ -370,15 +416,18 @@
       <div class="section insights">
           <div class="row">
             <h3>Insights and Recommendations</h3>
-            <p>Based on the results from the A/B testing, Version C performed the best, which was recommended to URX. For the future, we also recommended conducting live in the wild A/B testing to further support our design.</p>
-            <p>For future optimization of user engagement, we also recommend testing other things like carousel placement in the article, song relevancy, and having only one provider. </p>
+            <p>We were able to validate all 4 hypotheses we had going into the design process, which significantly improved users' comprehension of the trip creation process and the ease with which they were able to onboard themselves.</p>
+            <p>For the future, we recommend following native calendar apps such as Google Calendar and iCal more closely, such as in-calendar event adding, ability to drag and drop to change time, popover to edit event details etc. </p>
           </div>
         </div>
 
       </div>
 
       
-        <p><a class="btn btn-default view-more-btn next-casestudy" href="wetravel.html" role="button">Next Casestudy: WeTravel</a></p>
+        <div class="next-casestudy-container">
+            <p><a class="btn btn-default view-more-btn next-casestudy" href="URX.html#portfolio" role="button">Previous Casestudy: URX</a></p>
+        </div>
+        
       
     </div>
 
