@@ -49,7 +49,7 @@ img {
   background-image: url('Header photo.png');
   background-size: cover;
   background-position: center;
-  padding-top: 85px;
+  padding-top: 135px;
   padding-bottom: 85px;
 }
 .jumbotron p {
@@ -61,9 +61,57 @@ img {
 .jumbotron .container {
     max-width: 50%;
 }
+a.jumbotron-cta {
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #9d9d9d;
+    text-transform: none;
+    border-bottom: 1px solid;
+}
+a.jumbotron-cta:hover {
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.3s all;
+}
 
-
-
+h2.homepage-header {
+  font-weight: 100;
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 70px auto;
+}
+.recent-publications {
+  margin-bottom: 50px;
+}
+.recent-publications .container {
+  padding-left: 35px;
+  padding-bottom: 35px;
+}
+.recent-publications .container:last-child {
+  padding-bottom: 0px;
+}
+.publication-list:before {
+    content: url("futuro_icons_32px_67.png");
+    margin-left: -49px;
+}
+h4.publication-titles {
+    margin-top: -40px;
+    text-align: left;
+    font-size: 24px;
+    text-transform: none;
+}
+a.secondary-cta {
+    color: #535353;
+    font-size: 16px;
+    margin-left: 0px;
+    text-decoration: none;
+}
+a.secondary-cta:hover {
+    text-decoration: none;
+    color: rgb(87, 204, 233);
+    transition: 0.3s all;
+}
 /* Nav */
 
 .navbar-nav {
@@ -90,10 +138,11 @@ img {
 /* Project */
 
 .project {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   min-height: 400px;
 }
+
 .wetravel {
   background-color: #81aecd;
   color: #FFF;
@@ -134,7 +183,7 @@ p.project-scope-description {
 }
 .view-more-btn {
     padding: 10PX 28PX;
-    border: 1.5px solid #201713;
+    border: 1.5px solid #1F1E1D;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
@@ -146,10 +195,10 @@ p.project-scope-description {
     margin-top: 20px;
 }
 .view-more-btn:hover {
-    background-color: #201713;
+    background-color: #1F1E1D;
     color: #FFF;
     transition: 0.3s all;
-    border: 1.5px solid #201713;
+    border: 1.5px solid #1F1E1D;
 }
 .view-more-white {
     border: 1.5px solid #FFF;
@@ -345,6 +394,14 @@ p.results-description {
 .phase-three-timeline:before {
   content: url("futuro_icons_64px_210.png");
   margin-left: -92px;
+}
+.phase-four-timeline:before {
+    content: url("futuro_icons_64px_337.png");
+    margin-left: -92px;
+}
+.phase-five-timeline:before {
+    content: url("futuro_icons_64px_170.png");
+    margin-left: -91px;
 }
 
 h4.process-section-titles {
@@ -569,6 +626,29 @@ img.AB-results-verdict {
     float: none; 
   }
 }
+
+/* Portfolio Page */
+img.mockup-portfolio  {
+  max-height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+.mockup-portfolio img {
+  margin: 0 auto;
+  display: block;
+}
+img.project-logo.portfolio-logo {
+  margin: 20px auto;
+  display: block;
+}
+.portfolio-card {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #FEFEFE;
+  box-shadow: 1px 1px 4px #eee;
+  padding: 20px 60px;
+  min-height: 450px;
+}
 @media screen and (max-width: 768px) {
 
   .mockup {
@@ -616,6 +696,14 @@ img.AB-results-verdict {
   }
   .phase-three-timeline:before {
     content: url("futuro_icons_64px_210.png");
+    margin-left: -70px;
+  }
+  .phase-four-timeline:before {
+    content: url("futuro_icons_64px_337.png");
+    margin-left: -70px;
+  }
+  .phase-five-timeline:before {
+    content: url("futuro_icons_64px_170.png");
     margin-left: -70px;
   }
   .table-style td {
