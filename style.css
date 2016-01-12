@@ -654,7 +654,18 @@ img.AB-results-verdict {
     float: none; 
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .jumbotron .container {
+    max-width: 80%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .jumbotron {
+    min-height: 400px;
+    padding-top: 110px;
+  }
 
+}
 /* Portfolio Page */
 img.mockup-portfolio  {
   max-height: 200px;
