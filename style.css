@@ -737,10 +737,12 @@ img.project-logo.portfolio-logo {
   .table-style td {
     padding: 2px 3px;
   }
-  .table-style p, li, ul {
+  .table-style p, .table-style li, .table-style ul {
     font-size: 14px;
   }
-
+  .table-style ul {
+    padding-left: 20px;
+  }
   .process-arrow {
     background-image: url('process-arrow-down.png');
     margin: 0 auto;
@@ -768,4 +770,5 @@ img.project-logo.portfolio-logo {
   footer .row.container {
     width: 80%;
   }
+
 }
