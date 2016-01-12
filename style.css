@@ -715,8 +715,8 @@ img.project-logo.portfolio-logo {
   }
 
   .phase-one-timeline:before {
-  content: url("Process-Usability-Studies.png");
-  margin-left: -67px;
+    content: url("Process-Usability-Studies.png");
+    margin-left: -67px;
   }
   .phase-two-timeline:before {
     content: url("futuro_icons_64px_158.png");
@@ -737,9 +737,10 @@ img.project-logo.portfolio-logo {
   .table-style td {
     padding: 2px 3px;
   }
-  .table-style p {
+  .table-style p, li, ul {
     font-size: 14px;
   }
+
   .process-arrow {
     background-image: url('process-arrow-down.png');
     margin: 0 auto;
