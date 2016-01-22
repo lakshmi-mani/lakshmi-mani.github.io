@@ -306,6 +306,13 @@ footer .row.container {
   background-size: contain;
   position: relative;
 }
+.jumbotron-justlogin {
+  background-image: url('Justlogin-BG.jpg');
+  min-height: 480px;
+  margin-bottom: 0px;
+  background-size: contain;
+  position: relative;
+}
 .project-goals-card {
   position: relative;
   left: 50%;
