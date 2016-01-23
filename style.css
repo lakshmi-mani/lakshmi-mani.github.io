@@ -90,10 +90,12 @@ h2.homepage-header {
   font-weight: 100;
   font-size: 32px;
   font-family: 'Open Sans', sans-serif;
+}
+.recent-publications-container {
   margin: 70px auto;
 }
 .recent-publications {
-  margin-bottom: 50px;
+  margin: 70px auto;
 }
 .recent-publications .container {
   padding-left: 35px;
@@ -646,6 +648,7 @@ img.AB-results-verdict {
   color: #222;
   background: none;
   background-color: #FFF;
+  padding-top: 105px;
   padding-bottom: 20px;
 }
 .about-content {
