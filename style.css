@@ -49,6 +49,12 @@ img {
 .mobile-view {
   display: none;
 }
+a.link {
+  font-size: 16px;
+  text-transform: none;
+  margin: 0px;
+  font-weight: 300;
+}
 
 /* jumbotron */
 .jumbotron h1 {
@@ -57,7 +63,7 @@ img {
 .jumbotron {
   color: #FFF;
   text-align: center;
-  background-image: url('Header photo.png');
+  background-image: url('images/Header photo.png');
   background-size: cover;
   background-position: center;
   padding-top: 135px;
@@ -105,7 +111,7 @@ h2.homepage-header {
   padding-bottom: 0px;
 }
 .publication-list:before {
-    content: url("futuro_icons_32px_67.png");
+    content: url("images/futuro_icons_32px_67.png");
     margin-left: -49px;
 }
 h4.publication-titles {
@@ -295,21 +301,21 @@ footer .row.container {
 /* Project Pages */
 
 .jumbotron-urx {
-  background-image: url('URX-BG.png');
+  background-image: url('urx/URX-BG.png');
   min-height: 480px;
   margin-bottom: 0px;
   background-size: contain;
   position: relative;
 }
 .jumbotron-wetravel {
-  background-image: url('wetravel-bg.png');
+  background-image: url('wetravel/wetravel-bg.png');
   min-height: 480px;
   margin-bottom: 0px;
   background-size: contain;
   position: relative;
 }
 .jumbotron-justlogin {
-  background-image: url('Justlogin-BG.jpg');
+  background-image: url('justlogin/Justlogin-BG.jpg');
   min-height: 480px;
   margin-bottom: 0px;
   background-size: contain;
@@ -384,6 +390,9 @@ footer .row.container {
 .outcomes {
   text-align: center;
 }
+.examples-img {
+  border: 1px solid #e2e2e2;
+}
 .results {
   background-color: #FFF;
 }
@@ -404,7 +413,7 @@ p.results-description {
   margin: 20px auto;
 }
 .process-arrow {
-  background-image: url('process-arrow-right.png'); 
+  background-image: url('images/process-arrow-right.png'); 
   min-width: 64px;
   min-height: 64px;
   background-repeat: no-repeat;
@@ -428,23 +437,23 @@ p.results-description {
   border-left: 1px solid #535353;
 }
 .phase-one-timeline:before {
-  content: url("Process-Usability-Studies.png");
+  content: url("images/Process-Usability-Studies.png");
   margin-left: -90px;
 }
 .phase-two-timeline:before {
-  content: url("futuro_icons_64px_158.png");
+  content: url("images/futuro_icons_64px_158.png");
   margin-left: -83px;
 }
 .phase-three-timeline:before {
-  content: url("futuro_icons_64px_210.png");
+  content: url("images/futuro_icons_64px_210.png");
   margin-left: -92px;
 }
 .phase-four-timeline:before {
-    content: url("futuro_icons_64px_337.png");
+    content: url("images/futuro_icons_64px_337.png");
     margin-left: -92px;
 }
 .phase-five-timeline:before {
-    content: url("futuro_icons_64px_170.png");
+    content: url("images/futuro_icons_64px_170.png");
     margin-left: -91px;
 }
 
@@ -759,7 +768,7 @@ img.project-logo.portfolio-logo {
     padding-left: 20px;
   }
   .process-arrow {
-    background-image: url('process-arrow-down.png');
+    background-image: url('images/process-arrow-down.png');
     margin: 0 auto;
     display: inline-block; 
   }
