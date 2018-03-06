@@ -456,6 +456,18 @@ p.results-description {
     content: url("images/futuro_icons_64px_170.png");
     margin-left: -91px;
 }
+.phase-prekickoff-timeline:before {
+    content: url("images/futuro_icons_64px_460.png");
+    margin-left: -91px;
+}
+.phase-userresearch-timeline:before {
+    content: url("images/futuro_icons_64px_478.png");
+    margin-left: -91px;
+}
+.phase-visualdesign-timeline:before {
+    content: url("images/futuro_icons_64px_522.png");
+    margin-left: -91px;
+}
 
 h4.process-section-titles {
   margin-top: -58px;
