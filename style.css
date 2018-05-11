@@ -166,6 +166,10 @@ a.secondary-cta:hover {
   background-color: #81aecd;
   color: #FFF;
 }
+.utc {
+  background-color: #2a2b2b;
+  color: #FFF;
+}
 .bite {
   background-color: #111111;
   color: #FFF;
@@ -184,6 +188,9 @@ a.secondary-cta:hover {
 }
 .urx img {
   width: auto;
+}
+.utc img {
+    width: auto;
 }
 img.project-logo {
   max-height: 30px;
